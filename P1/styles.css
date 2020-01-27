@@ -1,0 +1,27 @@
+
+@font-face
+{
+   font-family: "LUMOS";
+   src: url("fuentes/LUMOS.ttf");
+}
+@font-face
+{
+   font-family: "HARRYP__";
+   src: url("fuentes/HARRYP__.TTF");
+}
+body {
+  background-color: powderblue;
+}
+h1 {
+  font-family: "HARRYP__";
+  font-size: 40px;
+}
+h2 {
+  font-family: "HARRYP__";
+    font-size: 30px;
+}
+p {
+  font-family: "LUMOS";
+  font-size: 20px;
+  background-image: url("images/hogwars.jpg");
+}
