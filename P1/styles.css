@@ -2,26 +2,45 @@
 @font-face
 {
    font-family: "LUMOS";
-   src: url("fuentes/LUMOS.ttf");
+   src: url("LUMOS.ttf");
 }
 @font-face
 {
    font-family: "HARRYP__";
-   src: url("fuentes/HARRYP__.TTF");
+   src: url("HARRYP__.TTF");
 }
 body {
-  background-color: powderblue;
+  background-color:lightBlue;
+  margin-right: 20px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
+img {
+  float:left;
+  margin-right: 20px;
+
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width:120px;
+  height:150px;
+  }
+
 h1 {
   font-family: "HARRYP__";
-  font-size: 40px;
+  font-size: 35px;
+  text-align: center;
 }
 h2 {
   font-family: "HARRYP__";
-    font-size: 30px;
+  font-size: 30px;
+  background-color:#00bcd4;
 }
 p {
   font-family: "LUMOS";
   font-size: 20px;
-  background-image: url("images/hogwars.jpg");
+}
+address {
+  font-family: "LUMOS";
+  font-size: 20px;
 }
