@@ -16,30 +16,35 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+/*
 img {
   float:left;
-  margin-right: 20px;
+  margin-right: 50px;
   margin-left: 30px;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   width:120px;
   height:150px;
   }
-
+*/
 h1 {
   font-family: "HARRYP__";
   font-size: 35px;
   text-align: center;
 }
-h2 {
+.apartados{
   font-family: "HARRYP__";
-  font-size: 30px;
+  font-size: 25px;
   background-color:#00bcd4;
+  margin-right: 60px;
+  text-align: center;
 }
-p {
+.parrafos {
   font-family: "LUMOS";
-  font-size: 20px;
+  font-size: 25px;
+  text-align: justify;
 }
+
 address {
   font-family: "LUMOS";
   font-size: 20px;
