@@ -44,6 +44,15 @@ h1 {
   font-size: 25px;
   text-align: justify;
 }
+.imagen{
+  float:right;
+  margin-right: 50px;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width:120px;
+  height:150px;
+}
 
 address {
   font-family: "LUMOS";
