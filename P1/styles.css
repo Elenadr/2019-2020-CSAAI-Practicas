@@ -1,60 +1,106 @@
+/* Documento de estilo referido al
+  currículum de Hermione. */
 
 @font-face
 {
    font-family: "LUMOS";
    src: url("LUMOS.ttf");
 }
+/* Uso font-face para poder usar las fuentes
+   descargadas de internet que quiero usar. */
 @font-face
 {
    font-family: "HARRYP__";
    src: url("HARRYP__.TTF");
 }
+  /* Declaración de márgenes de mi página
+     para que no comience en los bordes
+     e introducción de imagen de pergamino
+     para usarla en el fondo. */
+
 body {
-  background-color:lightBlue;
-  margin-right: 20px;
+  background-image: url("pergamino3.png");
+  margin-right: 100px;
   margin-left: 100px;
   margin-top: 50px;
   margin-bottom: 20px;
+
 }
-/*
-img {
-  float:left;
-  margin-right: 50px;
-  margin-left: 30px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  width:120px;
-  height:150px;
-  }
-*/
+
+ /* Estilo del encabezado */
 h1 {
   font-family: "HARRYP__";
-  font-size: 35px;
+  color: black;
+  font-size: 50px;
   text-align: center;
-}
+  border: #AA7700 10px double; /* Dibujo del borde */
+  border-bottom: #AA7700 10px double;
+  padding: 10px;
+  margin-bottom: 0px;
+
+
+  }
+
+/* Estilo de los títulos de apartados */
 .apartados{
   font-family: "HARRYP__";
   font-size: 25px;
-  background-color:#00bcd4;
-  margin-right: 60px;
-  text-align: center;
+  width: 900px;
+  height:30px;
+  margin: 1em auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: #AA7700 5px double;
+  border-bottom: #AA7700 5px double;
+  padding: 10px;
+
+
+
+
 }
+/* Estilo de los bloques de texto*/
 .parrafos {
   font-family: "LUMOS";
   font-size: 25px;
-  text-align: justify;
+  width: 900px;
+  height:130px;
+  margin: 1em auto;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+/* Estilo de la imagen principal */
+.superior{
+
+  align-items: center;
+  justify-content: center;
+  border: #AA7700  10px double;
+  border: #AA7700 10px double;
+  margin-top: 0px;
+  display:flex;
+
+
+}
+.inferior{
+  border: #AA7700  10px double;
+  border: #AA7700 10px double;
+  margin-top: 0px;
+
 }
 .imagen{
-  float:right;
-  margin-right: 50px;
-  margin-left: 30px;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  width:120px;
-  height:150px;
-}
+  float:inherit;
+  display: flex;
+  position:inherit;
+  .encabezado{
+    display: flex;
+  }
+
 
 address {
   font-family: "LUMOS";
   font-size: 20px;
+  padding:70px;
+  display: inline-flex;
+
 }
