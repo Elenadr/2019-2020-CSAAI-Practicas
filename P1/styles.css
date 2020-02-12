@@ -25,6 +25,7 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
 
+
 }
 
  /* Estilo del encabezado */
@@ -55,6 +56,7 @@ h1 {
   border: #AA7700 5px double;
   border-bottom: #AA7700 5px double;
   padding: 10px;
+  width: 75%;
 
 
 
@@ -70,9 +72,11 @@ h1 {
   display: flex;
   align-items: center;
   padding: 0px;
+  width: 75%;
+
 }
 .cuerpo{
-  display: flex;
+  display: inline-flex;
 }
 /* Estilo de la imagen principal */
 address {
