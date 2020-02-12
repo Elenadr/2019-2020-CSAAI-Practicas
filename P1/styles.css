@@ -37,6 +37,7 @@ h1 {
   border-bottom: #AA7700 10px double;
   padding: 10px;
   margin-bottom: 0px;
+  width: 100%
 
 
   }
@@ -88,11 +89,13 @@ aside{
   margin-top: 0px;
   width: 25%;
   display: block;
+  text-align: center;
 }
 main{
   border: #AA7700  10px double;
   border: #AA7700 10px double;
   margin-top: 0px;
+  width: 75%;
 
 }
 .imagen{
