@@ -70,19 +70,26 @@ h1 {
   align-items: center;
   padding: 0px;
 }
+.cuerpo{
+  display: flex;
+}
 /* Estilo de la imagen principal */
-.superior{
+address {
+  font-family: "LUMOS";
+  font-size: 20px;
+  padding:70px;
+  display: inline-flex;
 
-  align-items: center;
-  justify-content: center;
+}
+aside{
+
   border: #AA7700  10px double;
   border: #AA7700 10px double;
   margin-top: 0px;
-  display:flex;
-
-
+  width: 25%;
+  display: block;
 }
-.inferior{
+main{
   border: #AA7700  10px double;
   border: #AA7700 10px double;
   margin-top: 0px;
@@ -92,15 +99,3 @@ h1 {
   float:inherit;
   display: flex;
   position:inherit;
-  .encabezado{
-    display: flex;
-  }
-
-
-address {
-  font-family: "LUMOS";
-  font-size: 20px;
-  padding:70px;
-  display: inline-flex;
-
-}
