@@ -19,10 +19,8 @@
      para usarla en el fondo. */
 
 body {
-  background-image: url("pergamino3.png");
-  padding: 0px;
-  margin: 50px;
-  border: #AA7700 10px double;
+  background-image: url("pergaminonew.png");
+
 
 
 }
@@ -33,9 +31,11 @@ h1 {
   font-size: 50px;
   text-align: center;
   text-shadow:4px 4px grey;
-  border-bottom: #AA7700 10px double;
+  border: #AA7700 10px double;
+  border-bottom: none;
   padding: 10px;
-  margin: 0px;
+  margin: 50px;
+  margin-bottom: 0px;
 
   }
 
@@ -53,6 +53,7 @@ h1 {
   margin-top: 10px;
   justify-content: center;
   align-items: center;
+  text-shadow:2px 2px grey;
   }
 
 
@@ -63,7 +64,7 @@ h1 {
   font-size: 25px;
   display: flex;
   align-items: center;
-  margin: 0px;
+  margin: 10px;
   padding: 0px;
 
 
@@ -71,7 +72,15 @@ h1 {
 }
 .cuerpo{
   display: inline-flex;
+  padding: 0px;
+  margin: 50px;
+  border: #AA7700 10px double;
+  margin-top: 0px;
+
+
+
 }
+
 /* Estilo de la imagen principal */
 address {
   font-family: "LUMOS";
@@ -83,20 +92,24 @@ address {
 aside{
 
   border: #AA7700  10px double;
-  border: #AA7700 10px double;
+
   margin: 0px;
-  padding:10px;
+  padding:15px;
   display: block;
-  text-align: center;
+  text-align: justify;
 }
 main{
   border: #AA7700  10px double;
-  border: #AA7700 10px double;
   margin-top: 0px;
   padding: 10px;
+  background-image: url("mara3.png");
+  background-position: center;
+  background-repeat: repeat-x;
 
 }
 .imagen{
   float:inherit;
   position:inherit;
+  padding: 0;
+  margin:0;
 }
