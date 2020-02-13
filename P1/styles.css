@@ -20,10 +20,9 @@
 
 body {
   background-image: url("pergamino3.png");
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  padding: 0px;
+  margin: 50px;
+  border: #AA7700 10px double;
 
 
 }
@@ -31,49 +30,43 @@ body {
  /* Estilo del encabezado */
 h1 {
   font-family: "HARRYP__";
-  color: black;
   font-size: 50px;
   text-align: center;
-  border: #AA7700 10px double; /* Dibujo del borde */
+  text-shadow:4px 4px grey;
   border-bottom: #AA7700 10px double;
   padding: 10px;
-  margin-bottom: 0px;
-  width: 100%
-
+  margin: 0px;
 
   }
 
 /* Estilo de los títulos de apartados */
 .apartados{
   font-family: "HARRYP__";
-  font-size: 25px;
-  width: 900px;
-  height:30px;
-  margin: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: #AA7700 5px double;
-  border-bottom: #AA7700 5px double;
+  font-size: 35px;
+  border-bottom: #AA7700 10px double;
   padding: 10px;
-  width: 75%;
+  display: inline-flex;
+  width: 98%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+justify-content: center;
+  align-items: center;
+  }
 
 
 
-
-}
 /* Estilo de los bloques de texto*/
 .parrafos {
   font-family: "LUMOS";
   font-size: 25px;
-  width: 900px;
-  height:130px;
-  margin: 20px;
   display: flex;
   align-items: center;
+  margin: 0px;
   padding: 0px;
-  width: 75%;
-  padding: 0;
+
+
 
 }
 .cuerpo{
@@ -83,7 +76,7 @@ h1 {
 address {
   font-family: "LUMOS";
   font-size: 20px;
-  padding:70px;
+  padding:10px;
   display: inline-flex;
 
 }
@@ -91,8 +84,8 @@ aside{
 
   border: #AA7700  10px double;
   border: #AA7700 10px double;
-  margin-top: 0px;
-  width: 25%;
+  margin: 0px;
+  padding:10px;
   display: block;
   text-align: center;
 }
@@ -100,11 +93,10 @@ main{
   border: #AA7700  10px double;
   border: #AA7700 10px double;
   margin-top: 0px;
-  width: 75%;
+  padding: 10px;
 
 }
 .imagen{
   float:inherit;
-
   position:inherit;
 }

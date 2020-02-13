@@ -1,16 +1,16 @@
 
 body{
-  padding: 15px;
+
   border: solid;
   border-color:#80000c;
   margin: 10px;
-  border-radius: 50px;
+
 }
 p{
   padding: 20px;
   border: solid; /*1ºDibujamos borde que se extiende como la peste sin cortar*/
   border-color: #22ca22cf;
-  margin: 10px;
+  margin: 0px;
   text-align: center;
-  border-radius: 125px;
+
 }
