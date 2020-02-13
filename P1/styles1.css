@@ -20,10 +20,14 @@
 
 body {
   background-image: url("pergamino3.png");
-  margin-right: 100px;
+ /* margin-right: 100px;
   margin-left: 100px;
+ margin-top: 50px;
+ margin-bottom: 20px;*/
+  border: #AA7700 10px double;
+  padding: 0px;
+  margin: 50px;/*Esto es lo que me centra toda la caja*/
   margin-top: 50px;
-  margin-bottom: 20px;
 
 
 }
@@ -34,11 +38,10 @@ h1 {
   color: black;
   font-size: 50px;
   text-align: center;
-  border: #AA7700 10px double; /* Dibujo del borde */
+ /*border: #AA7700 10px double;*/
   border-bottom: #AA7700 10px double;
   padding: 10px;
-  margin-bottom: 0px;
-  width: 100%
+  margin-top: 0px;
 
 
   }
@@ -47,21 +50,17 @@ h1 {
 .apartados{
   font-family: "HARRYP__";
   font-size: 25px;
-  width: 900px;
+  width: 500px;
   height:30px;
-  margin: 20px;
+  margin: 10px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: #AA7700 5px double;
-  border-bottom: #AA7700 5px double;
   padding: 10px;
-  width: 75%;
-
-
-
 
 }
+
 /* Estilo de los bloques de texto*/
 .parrafos {
   font-family: "LUMOS";
@@ -73,7 +72,6 @@ h1 {
   align-items: center;
   padding: 0px;
   width: 75%;
-  padding: 0;
 
 }
 .cuerpo{
@@ -89,22 +87,22 @@ address {
 }
 aside{
 
-  border: #AA7700  10px double;
-  border: #AA7700 10px double;
+  /*border: #AA7700  10px double;
+  border: #AA7700 10px double;*/
   margin-top: 0px;
   width: 25%;
   display: block;
   text-align: center;
 }
 main{
-  border: #AA7700  10px double;
-  border: #AA7700 10px double;
+ /* border: #AA7700  10px double;
+  border: #AA7700 10px double;*/
   margin-top: 0px;
   width: 75%;
 
 }
 .imagen{
   float:inherit;
-
+  display: flex;
   position:inherit;
 }
