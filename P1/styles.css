@@ -13,18 +13,12 @@
    font-family: "HARRYP__";
    src: url("HARRYP__.TTF");
 }
-  /* Declaración de márgenes de mi página
-     para que no comience en los bordes
-     e introducción de imagen de pergamino
-     para usarla en el fondo. */
-
+/* Estilo del body, solo usado para background-image */
 body {
   background-image: url("pergaminonew.png");
-  flex-wrap: wrap;
-  min-height: 100vh;
 }
 
- /* Estilo del encabezado */
+ /* Estilo del encabezado principal, osea del título */
 h1 {
   font-family: "HARRYP__";
   font-size: 50px;
@@ -35,8 +29,15 @@ h1 {
   padding: 10px;
   margin: 50px;
   margin-bottom: 0px;
-
-
+  }
+ /* Estilo del cuerpo, excluyendo el título*/
+ .cuerpo{
+    display: inline-flex;
+    padding: 0px;
+    margin: 50px;
+    border: #AA7700 10px double;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 /* Estilo de los títulos de apartados */
@@ -56,8 +57,6 @@ h1 {
   text-shadow:2px 2px grey;
   }
 
-
-
 /* Estilo de los bloques de texto*/
 .parrafos {
   font-family: "LUMOS";
@@ -67,36 +66,10 @@ h1 {
   margin: 10px;
   padding: 0px;
   text-align: justify;
-    list-style-image: url("pluma1.png");
-
-
-
-}
-.cuerpo{
-  display: inline-flex;
-  padding: 0px;
-  margin: 50px;
-  border: #AA7700 10px double;
-  margin-top: 0px;
-  margin-bottom: 0px;
-
-
-
+  list-style-image: url("pluma1.png");
 }
 
-/* Estilo de la imagen principal */
-address{
-  font-family: "LUMOS";
-  font-size: 20px;
-  text-align: center;
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
-  column-count: 3;
-  margin-top: 20px;
-
-
-
-}
+ /* Estilo de la caja lateral. */
 aside{
   width: 30%;
   border: #AA7700  10px double;
@@ -104,18 +77,8 @@ aside{
   padding:15px;
   text-align: justify;
 }
-main{
-  border: #AA7700  10px double;
-  margin-top: 0px;
-  padding: 10px;
-  background-image: url("mara3.png");
-  background-position: center;
-  background-repeat: repeat-x;
-  flex-wrap: wrap;
 
-
-
-}
+/* Estilo de la imagen principal */
 .imagen{
   float:inherit;
   position:relative;
@@ -123,24 +86,47 @@ main{
   margin:0px;
   text-align: center;
 }
-footer{
-  align-self: flex-end;
-  margin:10px;
-  padding: 0px;
-  text-align: center;
-  margin-right: 50px;
-  opacity: 50%;
 
-}
+/* Estilo de las citas célebres */
 .frases{
+ font-family: "LUMOS";
+ font-size: 23px;
+ display: flex;
+ align-items: center;
+ padding: 0px;
+ text-align: justify;
+ font-style: italic;
+ list-style-image: url("pluma1.png");
+}
+
+ /* Estilo de la caja principal */
+main{
+  border: #AA7700  10px double;
+  margin-top: 0px;
+  padding: 10px;
+  background-image: url("marcaagua.png");
+  background-position: center;
+  background-repeat: repeat-x;
+  flex-wrap: wrap;
+}
+
+/* Estilo de las direcciones */
+address{
   font-family: "LUMOS";
-  font-size: 23px;
-  display: flex;
-  align-items: center;
-  padding: 0px;
-  text-align: justify;
-  font-style: italic;
-  list-style-image: url("pluma1.png");
+  font-size: 20px;
+  text-align: center;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3; /* Para visualizar las tres columnas */
+  margin-top: 20px;
+}
 
-
+/* Estilo del pie de página */
+footer{
+ align-self: flex-end;
+ margin:10px;
+ padding: 0px;
+ text-align: center;
+ margin-right: 50px;
+ opacity: 50%;
 }
