@@ -36,6 +36,7 @@ h1 {
   margin: 50px;
   margin-bottom: 0px;
 
+
   }
 
 /* Estilo de los títulos de apartados */
@@ -45,7 +46,7 @@ h1 {
   border-bottom: #AA7700 10px double;
   padding: 10px;
   display: inline-flex;
-  width: 98%;
+  width: 95%;
   height: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -65,7 +66,8 @@ h1 {
   align-items: center;
   margin: 10px;
   padding: 0px;
-  text-align: left;
+  text-align: justify;
+    list-style-image: url("pluma1.png");
 
 
 
@@ -83,18 +85,21 @@ h1 {
 }
 
 /* Estilo de la imagen principal */
-address {
+address{
   font-family: "LUMOS";
   font-size: 20px;
-  padding:10px;
-  display: inline-flex;
   text-align: center;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  margin-top: 20px;
+
+
 
 }
 aside{
-
+  width: 30%;
   border: #AA7700  10px double;
-
   margin: 0px;
   padding:15px;
   text-align: justify;
@@ -109,18 +114,33 @@ main{
   flex-wrap: wrap;
 
 
+
 }
 .imagen{
   float:inherit;
-  position:inherit;
+  position:relative;
   padding: 0px;
   margin:0px;
+  text-align: center;
 }
 footer{
   align-self: flex-end;
   margin:10px;
   padding: 0px;
-  text-align: right;
+  text-align: center;
   margin-right: 50px;
+  opacity: 50%;
+
+}
+.frases{
+  font-family: "LUMOS";
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  text-align: justify;
+  font-style: italic;
+  list-style-image: url("pluma1.png");
+
 
 }
