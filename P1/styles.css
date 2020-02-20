@@ -77,14 +77,19 @@ aside{
   padding:15px;
   text-align: justify;
 }
-
+/* Estilo del gif */
+.gif{
+  position: absolute;
+  left:260px;
+}
 /* Estilo de la imagen principal */
 .imagen{
   float:inherit;
   position:relative;
   padding: 0px;
   margin:0px;
-  text-align: center;
+
+  right: 23px;
 }
 
 /* Estilo de las citas célebres */
@@ -128,5 +133,5 @@ footer{
  padding: 0px;
  text-align: center;
  margin-right: 50px;
- opacity: 50%;
+
 }
