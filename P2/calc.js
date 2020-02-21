@@ -8,4 +8,5 @@ hola.onclick = () =>{
   }else{
     hola.style.backgroundColor='';
   }
+  console.log(3);
 }
