@@ -1,15 +1,29 @@
 body{
-  background-color: lightblue;
-  color: darkblue;
+  /*background-image: url("new2.jpeg"); */
+  background-color: #908989;
+
+  color: #790a0a;
   font-size: 50px;
 }
 button {
-  background-color: #4CAF50; /* Green */
-  border: none;
+  background-color: #790a0a; /* Green */
+  border: solid;
+  border-color: #2d0a10;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  width:80px;
+  height:50px;
+  margin-left: 20px;
+  margin-right: auto;
+  justify-content: center;
+
+}
+.botones{
+  background:  #380303;
+
+  border-radius: 50px;
 }
