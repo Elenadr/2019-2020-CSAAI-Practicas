@@ -1,12 +1,12 @@
 console.log("Launching Javascript... ");
 
 const hola = document.getElementById('hola')
-hola.onclick = () =>{
+boton1.onclick = () =>{
   console.log("Click!!");
-  if (  hola.style.backgroundColor==''){
-    hola.style.backgroundColor="lightpink";
+  if (  boton1.style.backgroundColor==''){
+    boton1.style.backgroundColor="lightpink";
   }else{
-    hola.style.backgroundColor='';
+    boton1.style.backgroundColor='';
   }
   console.log(3);
 }
