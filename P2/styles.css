@@ -1,5 +1,5 @@
 body{
-  /*background-image: url("new2.jpeg"); */
+  /*background-image: url("pp.jpg"); */
   background-color: #908989;
 
   color: #790a0a;
@@ -21,9 +21,13 @@ button {
   margin-right: auto;
   justify-content: center;
 
+
 }
 .botones{
   background:  #380303;
-
   border-radius: 50px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  
 }
