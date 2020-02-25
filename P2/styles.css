@@ -1,12 +1,17 @@
+/* Uso font-face para poder usar las fuentes
+   descargadas de internet que quiero usar. */
+@font-face
+{
+   font-family: "HARRYP__";
+   src: url("HARRYP__.TTF");
+}
 body{
-  /*background-image: url("pp.jpg"); */
-  background-color: #908989;
+  background-image: url("hp14.png");
 
-  color: #790a0a;
-  font-size: 50px;
+  /*background-color: #908989;*/
 }
 button {
-  background-color: #790a0a; /* Green */
+  background-color: grey;/* #790a0a; Green */
   border: solid;
   border-color: #2d0a10;
   color: white;
@@ -22,12 +27,23 @@ button {
   justify-content: center;
 
 
+
 }
+h1 {
+  font-family: "HARRYP__";
+  font-size: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  margin-bottom: 0px;
+  color:black
+  }
 .botones{
-  background:  #380303;
+  /*background:  grey#380303;*/
   border-radius: 50px;
   text-align: center;
-  margin-left: 30%;
+
   margin-right: 30%;
-  
+
+
 }
