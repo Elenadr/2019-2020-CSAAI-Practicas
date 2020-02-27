@@ -5,7 +5,7 @@ console.log("Ejecutando JS...");
 //-- Acceder a los elementos del DOM
 const gui ={
   display:document.getElementById("display"),
-  boton: document.getElementById("boton"),
+  boton1: document.getElementById("boton1"),
   boton2: document.getElementById("boton2")
 }
 
@@ -26,7 +26,7 @@ setInterval(()=>{
   counter.inc(1);
 },1000);
 //suma
-gui.boton.onclick = () => {
+gui.boton1.onclick = () => {
   console.log("Click!");
   counter.inc(1);
 }
