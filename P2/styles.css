@@ -6,28 +6,7 @@
    src: url("HARRYP__.TTF");
 }
 body{
-  background-image: url("hp14.png");
-
-  /*background-color: #908989;*/
-}
-button {
-  background-color: grey;/* #790a0a; Green */
-  border: solid;
-  border-color: #2d0a10;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width:80px;
-  height:50px;
-  margin-left: 20px;
-  margin-right: auto;
-  justify-content: center;
-
-
-
+  background-image: url("hhh.jpg");
 }
 h1 {
   font-family: "HARRYP__";
@@ -36,14 +15,43 @@ h1 {
   padding: 10px;
   margin: 50px;
   margin-bottom: 0px;
-  color:black
+  color:white;
   }
-.botones{
-  /*background:  grey#380303;*/
-  border-radius: 50px;
-  text-align: center;
+  .calc{
+    /*background:  grey#380303;*/
+    border-radius: 30px;
+    text-align: center;
+    font-family: "HARRYP__";
+      font-size: 30px;
+  }
+.cdigito{
+  font-family: "HARRYP__";
+  font-size: 30px;
+    border-radius: 30px;
+}
+.coperator{
+  font-family: "HARRYP__";
+  font-size: 30px;
+    border-radius: 30px;
+}
+.boton{
+  font-family: "HARRYP__";
+  font-size: 30px;
+    border-radius: 30px;
+}
+.pantalla{
+  background: white;
+  border: solid;
+  padding: 0px;
+  margin: auto;
 
-  margin-right: 30%;
-
-
+  height: 30px;
+  margin-bottom: 30px;
+  opacity: 60%;
+}
+p{
+  font-family: "HARRYP__";
+text-align: center;
+margin-top: 5px;
+opacity: none;
 }

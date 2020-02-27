@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
 
     <script src="calc.js" defer></script>
 
@@ -11,31 +12,36 @@
 
     <h1>Wizard's Calculator</h1>
 
-    <div class="botones">
+    <div class="calc">
+    <div class="pantalla">
     <p id="display">0</p>
+  </div>
     <button class="cdigito" value="7" >7</button>
     <button class="cdigito" value="8" >8</button>
     <button class="cdigito" value="9" >9</button>
-    <button id=delete >DEL</button>
-    <button id=clear >AC</button>
+    <button class="boton"id=delete >C</button>
+    <button class="boton"id=clear >AC</button>
     <br>
     <button class="cdigito" value="4" >4</button>
     <button class="cdigito" value="5" >5</button>
     <button class="cdigito" value="6" >6</button>
-    <button id=multiplication >x</button>
-    <button id=division >÷</button>
+    <button class="coperator" value="*">x</button>
+    <button class="coperator" value="/" >/</button>
     <br>
     <button class="cdigito" value="1" >1</button>
     <button class="cdigito" value="2" >2</button>
     <button class="cdigito" value="3" >3</button>
-    <button id=sum >+</button>
-    <button id=subtraction >-</button>
+    <button class="coperator" value="+">+</button>
+    <button class="coperator" value="-" >-</button>
     <br>
     <button class="cdigito" value="0" >0</button>
-    <button id=dot >.</button>
-    <button id=exp >EXP</button>
-    <button id=ans >ANS</button>
-    <button id=equal >=</button>
+    <button class="boton" id=dot >.</button>
+    <button class="coperator"value="**">^</button>
+    <button class="cdigito" value="e" >e</button>
+    <button class="boton"id=equal >=</button>
+    <br>
+
+
   </div>
   </body>
 </html>

@@ -8,6 +8,7 @@ const gui ={
   suma:document.getElementById("suma"),
   igual:document.getElementById("igual"),
   clear:document.getElementById("clear"),
+  resta:document.getElementById("resta"),
 }
 let digitos = document.getElementsByClassName("cdigito");
 
@@ -30,7 +31,10 @@ suma.onclick = () => {
   display.innerHTML += suma.value;
     console.log("click en el +");
 }
-
+resta.onclick = () => {
+  display.innerHTML += resta.value;
+    console.log("click en el -");
+}
 //-- Evaluar la expresion
 igual.onclick = () => {
   display.innerHTML = eval(display.innerHTML);
