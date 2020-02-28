@@ -46,6 +46,3 @@ clear.onclick = () => {
   display.innerHTML = "0";
     console.log("clear");
 }
-dot.onclick = () =>{
-  display.innerHTML += "," ;
-}
