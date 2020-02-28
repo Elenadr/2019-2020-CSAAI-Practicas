@@ -19,10 +19,16 @@ h1 {
   }
   .calc{
     /*background:  grey#380303;*/
-    border-radius: 30px;
+    border-radius: 10px;
     text-align: center;
     font-family: "HARRYP__";
       font-size: 30px;
+      width: 30%;
+      padding: 0%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(255,255,255,0.2);
+
   }
 .cdigito{
   font-family: "HARRYP__";
@@ -41,13 +47,12 @@ h1 {
 }
 .pantalla{
   background: white;
-  border: solid;
+  border-bottom: solid;
+      border-radius: 10px;
   padding: 0px;
-  margin: auto;
-
   height: 30px;
   margin-bottom: 30px;
-  opacity: 60%;
+  background-color: rgba(255,255,255,0.0);
 }
 p{
   font-family: "HARRYP__";
