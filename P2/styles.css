@@ -10,53 +10,95 @@ body{
 }
 h1 {
   font-family: "HARRYP__";
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
   padding: 10px;
   margin: 50px;
   margin-bottom: 0px;
-  color:white;
+  color:silver;
+/*  text-shadow:#CEAB46 2px 0; */
+
+/*  -webkit-text-stroke: 0.03px #533E03; */
+
   }
   .calc{
     /*background:  grey#380303;*/
     border-radius: 10px;
     text-align: center;
     font-family: "HARRYP__";
-      font-size: 30px;
-      width: 30%;
+      font-size: 40px;
+      width: 32%;
       padding: 0%;
       margin-left: auto;
       margin-right: auto;
-      background-color: rgba(255,255,255,0.2);
+
+
 
   }
-.cdigito{
-  font-family: "HARRYP__";
-  font-size: 30px;
-    border-radius: 30px;
-}
-.coperator{
-  font-family: "HARRYP__";
-  font-size: 30px;
-    border-radius: 30px;
-}
-.boton{
-  font-family: "HARRYP__";
-  font-size: 30px;
-    border-radius: 30px;
-}
+
+
 .pantalla{
   background: white;
-  border-bottom: solid;
-      border-radius: 10px;
-  padding: 0px;
+  border-bottom:double ;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: solid 40px rgba(1,1,1,0.9);
+  border-bottom: 10px rgba(1,1,1,0.9);
+  padding: 10px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 38px;
   height: 30px;
-  margin-bottom: 30px;
-  background-color: rgba(255,255,255,0.0);
+  background-color: rgba(255,255,255,0.2);
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
 }
 p{
   font-family: "HARRYP__";
-text-align: center;
-margin-top: 5px;
-opacity: none;
+  text-align: center;
+  margin:0px;
+  opacity: none;
+  font-size: 40px;
+height: 50px;
+border:silver 5px ridge;
+border-radius: 5px;
+padding-top: 8px;
+
+}
+
+.Calculator{
+    background-color:rgba(1,1,1,0.9);
+    padding: 15px;
+    width: auto;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.line1{
+  padding: 10px;
+}
+.line2{
+  padding: 15px;
+
+  padding-left: 23px;
+  padding-right: 20px;
+}
+
+.line3{
+  padding: 15px;
+
+}
+.line4{
+  padding: 15px;
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+}
+button{
+  font-family: "HARRYP__";
+  font-size: 40px;
+    border-radius: 40px;
 }
