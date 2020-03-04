@@ -15,7 +15,10 @@ h1 {
   padding: 10px;
   margin: 50px;
   margin-bottom: 0px;
-  color:silver;
+  color:#A98727;
+  text-shadow:#CEAB46 2px 0;
+
+  -webkit-text-stroke: 0.03px #533E03;
 /*  text-shadow:#CEAB46 2px 0; */
 
 /*  -webkit-text-stroke: 0.03px #533E03; */
@@ -42,8 +45,8 @@ h1 {
   border-bottom:double ;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  border: solid 40px rgba(1,1,1,0.9);
-  border-bottom: 10px rgba(1,1,1,0.9);
+  border: solid 40px rgba(1,1,1,0.8);
+  border-bottom: 10px rgba(1,1,1,0.7);
   padding: 10px;
   padding-top: 0px;
   padding-left: 0px;
@@ -69,7 +72,7 @@ padding-top: 8px;
 }
 
 .Calculator{
-    background-color:rgba(1,1,1,0.9);
+    background-color:rgba(1,1,1,0.7);
     padding: 15px;
     width: auto;
     border-bottom-left-radius:30px ;
