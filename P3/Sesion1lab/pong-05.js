@@ -48,7 +48,7 @@ ctx.lineTo(canvas.width/2, canvas.height);
 ctx.stroke();
 
 //------ Dibujar el tanteo
-ctx.font = "100px Arial";
-ctx.fillStyle = "white";
-ctx.fillText("0", 200, 80);
-ctx.fillText("1", 340, 80);
+ctx.font = "50px Comic Sans";
+ctx.fillStyle = "red";
+ctx.fillText("tusa", 100, 380);
+ctx.fillText("nara", 340, 80);
