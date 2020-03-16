@@ -5,4 +5,5 @@ interesante y que sin duda no voy a dejar de usar en futuras prácticas.
 He intentado hacer la práctica un poco más divertida utilizando uno de
 mis mundos favoritos de fantasía.
 Asi que aqui teneis el Currículum de una de las brujas más brillantes
-del universo Harry Potter. 
+del universo Harry Potter.
+CV https://elenadr.github.io/2019-2020-CSAAI-Practicas/P1/index.html
