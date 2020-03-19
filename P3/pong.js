@@ -1,4 +1,3 @@
-
 console.log("Ejecutando JS...");
 
 //-- Obtener el objeto canvas
