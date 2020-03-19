@@ -94,14 +94,15 @@ setInterval(()=>{
   animacion();
 },16);
 
-//-- Obtener el boton de saque
-const sacar = document.getElementById("sacar");
+//-- Retrollamada de las teclas
+window.onkeydown = (e) => {
 
-//-- Botón de saque:
-//-- Dar a la bola una velocidad inicial
-//-- También restablecemos la posicion inicial
-sacar.onclick = () => {
-  bola_x = 50;
-  bola_vx = 6;
-  console.log("Saque!");
+  //-- Según la tecla se hace una cosa u otra
+  switch (e.key) {
+
+    //-- Tecla ESPACIO: Saque
+    case " ":
+      bola_x = 50;
+      bola_vx = 6;
+  }
 }
