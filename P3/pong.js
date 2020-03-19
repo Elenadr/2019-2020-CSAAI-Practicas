@@ -59,6 +59,9 @@ function animacion()
   if (bola.x >= canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
     bola.vx = bola.vx * -1;
+  }else if (bola.x <= (canvas.width==0)){
+    console.log('ss');
+    bola.vx = bola.vx * -1;
   }
 
   //-- Comprobar si hay colisión con la raqueta izquierda
