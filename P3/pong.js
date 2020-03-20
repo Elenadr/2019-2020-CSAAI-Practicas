@@ -79,6 +79,7 @@ function animacion()
 
   //-- Dibujar el nuevo frame
   draw();
+  console.log("Frame!");
 }
 
 //-- Inicializa la bola: Llevarla a su posicion inicial
