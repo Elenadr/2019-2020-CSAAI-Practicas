@@ -2,7 +2,6 @@ console.log("Ejecutando JS...");
 
 //-- Obtener el objeto canvas
 const canvas = document.getElementById("canvas");
-
 //-- Sus dimensiones las hemos fijado en el fichero
 //-- HTML. Las imprimimos en la consola
 console.log(`canvas: Anchura: ${canvas.width}, Altura: ${canvas.height}`);
@@ -71,6 +70,7 @@ function animacion()
   if (bola.x >= raqD.x && bola.x <=(raqD.x + raqD.width) &&
       bola.y >= raqD.y && bola.y <=(raqD.y + raqD.height)) {
     bola.vx = bola.vx * -1;
+    bola.vy = bola.vy * -1;
   }
   //-- Comprobar si hay colisión con la raqueta izquierda
   if (bola.x >= raqI.x && bola.x <=(raqI.x + raqI.width) &&
@@ -78,6 +78,14 @@ function animacion()
     bola.vx = bola.vx * -1;
   }
 
+  //Comprobar si la raqueta toca los bordes del canvas
+  if (raqI.y <=0){
+    raqI.y = raqI.y * -1;
+  }
+  //Comprobar si la raqueta toca los bordes del canvas
+  if (raqD.y <=0){
+    raqD.y = raqD.y * -1;
+  }
   //-- Actualizar coordenada x de la bola, en funcion de
   //-- su velocidad
   bola.update()
