@@ -59,9 +59,12 @@ function animacion()
   if (bola.x >= canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
     bola.vx = bola.vx * -1;
-  }else if (bola.x <= (canvas.width==0)){
-    console.log('ss');
+  } else if (bola.x <= (canvas.width==0)){
     bola.vx = bola.vx * -1;
+  } else if (bola.y >= canvas.height){
+    bola.vy = bola.vy * -1;
+  } else if (bola.y <= 0){
+    bola.vy = bola.vy * -1;
   }
 
   //-- Comprobar si hay colisión con la raqueta izquierda
@@ -79,7 +82,6 @@ function animacion()
 
   //-- Dibujar el nuevo frame
   draw();
-  console.log("Frame!");
 }
 
 //-- Inicializa la bola: Llevarla a su posicion inicial
@@ -121,6 +123,7 @@ window.onkeydown = (e) => {
 
       //-- Darle velocidad
       bola.vx = bola.vx_ini;
+      bola.vy = bola.vy_ini;
     default:
   }
 }
