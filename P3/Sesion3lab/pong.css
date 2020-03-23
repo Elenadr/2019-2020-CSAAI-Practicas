@@ -1,0 +1,14 @@
+@font-face
+{
+   font-family: "HARRYP__";
+   src: url("HARRYP__.TTF");
+}
+
+body{
+  background-color: lightblue;
+  font-family: "HARRYP__";
+  font-size: 50px;
+}
+#canvas{
+  background-color: grey;
+}
