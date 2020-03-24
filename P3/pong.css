@@ -7,13 +7,12 @@
 body{
   font-family: "HARRYP__";
   font-size: 50px;
-    background-image: url("JJ.png");
+    background-image: url("LA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #canvas{
     background-color: black;
-
   padding-left: 0;
    padding-right: 0;
    margin-left: auto;
