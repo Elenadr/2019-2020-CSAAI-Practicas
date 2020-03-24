@@ -5,10 +5,30 @@
 }
 
 body{
-  background-color: lightblue;
   font-family: "HARRYP__";
   font-size: 50px;
+    background-image: url("JJ.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #canvas{
-  background-color: grey;
+    background-color: black;
+
+  padding-left: 0;
+   padding-right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+
+}
+h1{
+  font-family: "HARRYP__";
+  font-size: 100px;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  margin-bottom: 0px;
+  color:#A98727;
+  text-shadow:#CEAB46 2px 0;
+  -webkit-text-stroke: 0.03px #533E03;
 }
