@@ -24,9 +24,9 @@ function draw() {
 
   //-- Estilo de la linea: discontinua
   //-- Trazos de 10 pixeles, y 10 de separacion
-  ctx.setLineDash([10, 1]);
-  ctx.strokeStyle = '#ac6a4b';
-  ctx.lineWidth = 12;
+  ctx.setLineDash([4, 0]);
+  ctx.strokeStyle = '#A98727';
+  ctx.lineWidth = 5;
   //-- Punto superior de la linea. Su coordenada x está en la mitad
   //-- del canvas
   ctx.moveTo(canvas.width/2, 0);
