@@ -7,12 +7,13 @@
 body{
     font-family: "HARRYP__";
     font-size: 50px;
-    background-image: url("es.gif");
+    background-image: url("harry.gif");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #canvas{
-   background-color: black;
+     background-color: #A98727;
+     background-size: cover;
    padding-left: 0;
    padding-right: 0;
    margin-left: auto;
