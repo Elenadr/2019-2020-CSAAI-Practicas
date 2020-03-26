@@ -72,10 +72,12 @@ function animacion()
     scoreI++;
     sonido_tanto.currentTime = 0;
     sonido_tanto.play();
+    console.log('gooooool de gryyyyfindooor');
   } else if (bola.x <= (canvas.width==0)){
     scoreD++;
     sonido_tanto.currentTime = 0;
     sonido_tanto.play()
+    console.log('gooooool de slytheryn');
 }
     if (bola.y >= canvas.height){
     bola.vy = bola.vy * -1;
