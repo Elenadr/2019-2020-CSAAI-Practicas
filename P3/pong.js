@@ -60,7 +60,6 @@ function animacion()
   if (bola.x >= canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
     bola.vx = bola.vx * -1;
-            scoreI++;
   } else if (bola.x <= (canvas.width==0)){
     bola.vx = bola.vx * -1;
   } else if (bola.y >= canvas.height){
@@ -74,14 +73,13 @@ function animacion()
       bola.y >= raqD.y && bola.y <=(raqD.y + raqD.height) &&
       (raqD.v <= 0)) {
         bola.vx = bola.vx * -1;
-
+  } else{
 
   }
   //-- Comprobar si hay colisión con la raqueta izquierda
   if (bola.x >= raqI.x && bola.x <=(raqI.x + raqI.width) &&
       bola.y >= raqI.y && bola.y <=(raqI.y + raqI.height)) {
     bola.vx = bola.vx * -1;
-
   }
 
   //Comprobar si la raqueta toca los bordes del canvas
