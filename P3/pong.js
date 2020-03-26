@@ -8,6 +8,8 @@ console.log(`canvas: Anchura: ${canvas.width}, Altura: ${canvas.height}`);
 
 //-- Obtener el contexto para pintar en el canvas
 const ctx = canvas.getContext("2d");
+var scoreD=0;
+var scoreI=0;
 
 //-- Pintar todos los objetos en el canvas
 function draw() {
@@ -36,10 +38,10 @@ function draw() {
   ctx.stroke();
 
   //------ Dibujar el tanteo
-  ctx.font = "100px Arial";
+  ctx.font = "40px HARRYP__";
   ctx.fillStyle = "white";
-  ctx.fillText("0", 200, 80);
-  ctx.fillText("1", 340, 80);
+  ctx.fillText("Gryffindor: " +scoreI, 30, 80);
+  ctx.fillText("Slythering: " +scoreD, 340, 80);
 }
 
 //---- Bucle principal de la animación
@@ -58,6 +60,7 @@ function animacion()
   if (bola.x >= canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
     bola.vx = bola.vx * -1;
+            scoreI++;
   } else if (bola.x <= (canvas.width==0)){
     bola.vx = bola.vx * -1;
   } else if (bola.y >= canvas.height){
@@ -71,11 +74,14 @@ function animacion()
       bola.y >= raqD.y && bola.y <=(raqD.y + raqD.height) &&
       (raqD.v <= 0)) {
         bola.vx = bola.vx * -1;
+
+
   }
   //-- Comprobar si hay colisión con la raqueta izquierda
   if (bola.x >= raqI.x && bola.x <=(raqI.x + raqI.width) &&
       bola.y >= raqI.y && bola.y <=(raqI.y + raqI.height)) {
     bola.vx = bola.vx * -1;
+
   }
 
   //Comprobar si la raqueta toca los bordes del canvas
