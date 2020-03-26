@@ -8,6 +8,10 @@ console.log(`canvas: Anchura: ${canvas.width}, Altura: ${canvas.height}`);
 
 //-- Obtener el contexto para pintar en el canvas
 const ctx = canvas.getContext("2d");
+//-- Obtener Sonidos
+const sonido_raqueta = new Audio("pong-raqueta.mp3");
+const sonido_rebote = new Audio("pong-rebote.mp3");
+
 var scoreD=0;
 var scoreI=0;
 
@@ -60,6 +64,8 @@ function animacion()
   if (bola.x >= canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
     bola.vx = bola.vx * -1;
+    sonido_rebote.currentTime = 0;
+    sonido_rebote.play();
   } else if (bola.x <= (canvas.width==0)){
     bola.vx = bola.vx * -1;
   } else if (bola.y >= canvas.height){
@@ -80,6 +86,9 @@ function animacion()
   if (bola.x >= raqI.x && bola.x <=(raqI.x + raqI.width) &&
       bola.y >= raqI.y && bola.y <=(raqI.y + raqI.height)) {
     bola.vx = bola.vx * -1;
+    //-- Reproducir sonido
+    sonido_raqueta.currentTime = 0;
+    sonido_raqueta.play();
   }
 
   //Comprobar si la raqueta toca los bordes del canvas
@@ -99,6 +108,7 @@ function animacion()
 
   //-- Dibujar el nuevo frame
   draw();
+  window.requestAnimationFrame(animacion);
 }
 
 //-- Inicializa la bola: Llevarla a su posicion inicial
@@ -114,9 +124,9 @@ raqD.y_ini = 300;
 raqD.init();
 
 //-- Arrancar la animación
-setInterval(()=>{
+
   animacion();
-},16);
+
 
 //-- Retrollamada de las teclas
 window.onkeydown = (e) => {
@@ -135,6 +145,11 @@ window.onkeydown = (e) => {
       raqD.v = raqD.v_ini;
       break;
     case " ":
+
+    //-- Reproducir sonido
+      sonido_raqueta.currentTime = 0;
+      sonido_raqueta.play();
+
       //-- Llevar bola a su posicion incicial
       bola.init();
 
