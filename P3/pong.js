@@ -13,12 +13,41 @@ const sonido_raqueta = new Audio("pong-raqueta.mp3");
 const sonido_rebote = new Audio("pong-rebote.mp3");
 const sonido_tanto = new Audio("pong-tanto.mp3");
 
+//-- Estados del juego
+const ESTADO = {
+  INIT: 0,
+  SAQUE: 1,
+  JUGANDO: 2,
+}
+
+//-- Variable de estado
+//-- Arrancamos desde el estado inicial
+let estado = ESTADO.INIT;
+
+
 var scoreD=0;
 var scoreI=0;
 
 //-- Pintar todos los objetos en el canvas
 function draw() {
 
+  //-- Dibujar el texto de comenzar
+if (estado == ESTADO.INIT) {
+  ctx.font = "40px HARRYP__";
+  ctx.fillStyle = "#5b4606";
+  ctx.fillText("Pulsa Start!", 30, 350);
+}
+//-- Dibujar el texto de sacar
+if (estado == ESTADO.SAQUE) {
+  ctx.font = "40px HARRYP__";
+  ctx.fillStyle = "yellow";
+  ctx.fillText("Saca!", 30, 350);
+}
+//----- Dibujar la Bola
+//-- Solo en el estado de jugando
+if (estado == ESTADO.JUGANDO) {
+ bola.draw();
+}
   //----- Dibujar la Bola
   bola.draw();
 
@@ -69,7 +98,8 @@ function animacion()
   // que "rebote" y vaya en el sentido opuesto
   if (bola.x > canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
-    scoreI++;
+
+    scoreI=scoreI+1;
     sonido_tanto.currentTime = 0;
     sonido_tanto.play();
     console.log('gooooool de gryyyyfindooor');

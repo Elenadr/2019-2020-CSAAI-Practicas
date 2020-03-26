@@ -50,6 +50,8 @@ class Bola {
     //-- Inicializa la bola: A su posicion inicial
     this.x = this.x_ini;
     this.y = this.y_ini;
+    this.vx = 0;
+    this.vy = 0;
   }
 
   update() {
