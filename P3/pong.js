@@ -33,6 +33,9 @@ function draw() {
   ctx.setLineDash([4, 0]);
   ctx.strokeStyle = '#A98727';
   ctx.lineWidth = 5;
+  ctx.arc(300,200,60,0,2*Math.PI);
+  ctx.stroke();
+
   //-- Punto superior de la linea. Su coordenada x está en la mitad
   //-- del canvas
   ctx.moveTo(canvas.width/2, 0);
@@ -46,6 +49,8 @@ function draw() {
   ctx.fillStyle = "white";
   ctx.fillText("Gryffindor: " +scoreI, 30, 80);
   ctx.fillText("Slythering: " +scoreD, 340, 80);
+  ctx.beginPath();
+
 }
 
 //---- Bucle principal de la animación
@@ -79,7 +84,7 @@ function animacion()
       bola.y >= raqD.y && bola.y <=(raqD.y + raqD.height) &&
       (raqD.v <= 0)) {
         bola.vx = bola.vx * -1;
-  } else{
+  } else {
 
   }
   //-- Comprobar si hay colisión con la raqueta izquierda

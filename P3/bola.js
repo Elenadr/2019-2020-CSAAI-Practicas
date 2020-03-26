@@ -4,7 +4,7 @@ class Bola {
     this.ctx = ctx;
 
     //-- Constante: Tamaño de la bola
-    this.size = 5;
+    this.size = 6;
 
     //-- Contante: Posicion inicial de la bola
     this.x_ini = 100;
@@ -28,13 +28,22 @@ class Bola {
   }
 
   draw() {
+    var grd = ctx.createLinearGradient(0, 0, 170, 0);
+    grd.addColorStop(0.5, "#5b4606");
+    grd.addColorStop(1, "#f9e5a9");
+
     //----- Dibujar la Bola
     this.ctx.beginPath();
-    this.ctx.fillStyle='white';
+    this.ctx.shadowBlur = 20;
+    this.ctx.shadowOffsetX = 20;
+    this.ctx.shadowColor = "black";
+    this.ctx.fillStyle = grd;
 
     //-- x,y, anchura, altura
-    this.ctx.rect(this.x, this.y, this.size, this.size);
+    this.ctx.arc(this.x, this.y, this.size,0,2*Math.PI);
     this.ctx.fill();
+
+
   }
 
   init() {
