@@ -124,7 +124,6 @@ function animacion()
 
   //-- Dibujar el nuevo frame
   draw();
-  window.requestAnimationFrame(animacion);
 }
 
 //-- Inicializa la bola: Llevarla a su posicion inicial
