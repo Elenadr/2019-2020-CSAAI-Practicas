@@ -11,6 +11,7 @@ const ctx = canvas.getContext("2d");
 //-- Obtener Sonidos
 const sonido_raqueta = new Audio("pong-raqueta.mp3");
 const sonido_rebote = new Audio("pong-rebote.mp3");
+const sonido_tanto = new Audio("pong-tanto.mp3");
 
 var scoreD=0;
 var scoreI=0;
@@ -48,7 +49,7 @@ function draw() {
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "white";
   ctx.fillText("Gryffindor: " +scoreI, 30, 80);
-  ctx.fillText("Slythering: " +scoreD, 340, 80);
+  ctx.fillText("Slytherin: " +scoreD, 340, 80);
   ctx.beginPath();
 
 }
@@ -66,14 +67,17 @@ function animacion()
   //-- Comprobar si la bola ha alcanzado el límite derecho
   //-- Si es así, se cambia de signo la velocidad, para
   // que "rebote" y vaya en el sentido opuesto
-  if (bola.x >= canvas.width) {
+  if (bola.x > canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
-    bola.vx = bola.vx * -1;
-    sonido_rebote.currentTime = 0;
-    sonido_rebote.play();
+    scoreI++;
+    sonido_tanto.currentTime = 0;
+    sonido_tanto.play();
   } else if (bola.x <= (canvas.width==0)){
-    bola.vx = bola.vx * -1;
-  } else if (bola.y >= canvas.height){
+    scoreD++;
+    sonido_tanto.currentTime = 0;
+    sonido_tanto.play()
+}
+    if (bola.y >= canvas.height){
     bola.vy = bola.vy * -1;
   } else if (bola.y <= 0){
     bola.vy = bola.vy * -1;
