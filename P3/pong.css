@@ -5,8 +5,6 @@
 }
 
 body{
-    font-family: "HARRYP__";
-    font-size: 45px;
     background-image: url("ppp.gif");
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,4 +31,45 @@ h1{
   color:#A98727;
   text-shadow:#CEAB46 2px 0;
   -webkit-text-stroke: 0.03px #533E03;
+}
+button{
+  font-family: "HARRYP__";
+  background-color: #533E03;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 15px;
+  display:inline-block;
+  border-width: 3px;
+  border-color: white
+}
+.bot{
+  background-color:#24361b; /* Green */
+  color: #CEAB46 ;
+  border-color:  #533E03;
+  border-width: 3px;
+}
+button:hover {
+  background-color:#24361b; /* Green */
+  color: #CEAB46 ;
+  border-color:  #533E03;
+  border-width: 3px;
+}
+.center{
+  display:inline-block
+}
+.izq{
+
+  font-family: "HARRYP__";
+  float: left;
+  margin-left: 200px;
+}
+.der{
+  font-family: "HARRYP__";
+  float: right;
+  margin-right: 200px;
+}
+.container{
+  text-align: center;
 }
