@@ -74,14 +74,15 @@ if (estado == ESTADO.SAQUE) {
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "#A98727";
   ctx.fillText("Space Bar for Serve", 30, 350);
-}
-
   //------ Dibujar el tanteo
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "white";
   ctx.fillText("Gryffindor: " +scoreI, 30, 80);
   ctx.fillText("Slytherin: " +scoreD, 340, 80);
   ctx.beginPath();
+
+}
+
 
 }
 
@@ -162,7 +163,7 @@ sonido_raqueta.play();
 
   //-- Dibujar el nuevo frame
   draw();
-  window.requestAnimationFrame(animacion);
+
 }
 
 //-- Inicializa la bola: Llevarla a su posicion inicial
@@ -178,8 +179,9 @@ raqD.y_ini = 300;
 raqD.init();
 
 //-- Arrancar la animación
-
+setInterval(()=>{
   animacion();
+},16);
 
 
   //-- Retrollamada de las teclas
