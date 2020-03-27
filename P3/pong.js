@@ -184,7 +184,11 @@ raqD.init();
 
   //-- Retrollamada de las teclas
   window.onkeydown = (e) => {
-
+    if (e.key == 'Enter'){
+      estado = ESTADO.SAQUE;
+      console.log("SAQUE!");
+      canvas.focus();
+  }
     //-- En el estado inicial no se
     //-- hace caso de las teclas
     if (estado == ESTADO.INIT)
@@ -203,7 +207,7 @@ raqD.init();
       case "l":
         raqD.v = raqD.v_ini;
         break;
-      case "s":
+      case " ":
 
         //-- El saque solo funciona en el estado de SAQUE
         if (estado == ESTADO.SAQUE) {
@@ -239,14 +243,6 @@ window.onkeyup = (e) => {
   }
 }
 
-//-- Retrollamada de Start
-window.onkeydown = (e) => {
-    if (e.key == 'Enter'){
-      estado = ESTADO.SAQUE;
-      console.log("SAQUE!");
-      canvas.focus();
-  }
-}
 const stop = document.getElementById("stop");
 
 stop.onclick = () => {
