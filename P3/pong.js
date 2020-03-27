@@ -101,7 +101,7 @@ function animacion()
   // que "rebote" y vaya en el sentido opuesto
   if (bola.x >= canvas.width) {
     //-- Hay colisión. Cambiar el signo de la bola
-    scoreI=scoreI+1;
+    scoreI++;
     sonido_tanto.currentTime = 0;
     sonido_tanto.play();
     console.log('gooooool de gryyyyfindooor');
@@ -252,5 +252,8 @@ stop.onclick = () => {
   estado = ESTADO.INIT;
   bola.init();
   console.log('stop');
+   scoreD=0;
+  scoreI=0;
+
 
 }
