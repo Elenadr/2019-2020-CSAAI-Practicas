@@ -10,8 +10,8 @@ body{
     background-repeat: no-repeat;
 }
 canvas{
-     background-color: #24361b;
-     background-size: cover;
+   background-color: #24361b;
+   background-size: cover;
    padding-left: 0;
    padding-right: 0;
    margin-left: auto;
@@ -23,7 +23,7 @@ canvas{
 
 h1{
   font-family: "HARRYP__";
-  font-size: 100px;
+  font-size: 70px;
   text-align: center;
   padding: 10px;
   margin: 50px;

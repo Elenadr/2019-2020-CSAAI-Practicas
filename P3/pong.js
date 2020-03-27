@@ -68,18 +68,23 @@ if (estado == ESTADO.INIT) {
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = '#A98727';
   ctx.fillText("PRESS ENTER!", 30, 350);
+  console.log('init');
 }
 //-- Dibujar el texto de sacar
 if (estado == ESTADO.SAQUE) {
-  ctx.font = "40px HARRYP__";
-  ctx.fillStyle = "#A98727";
-  ctx.fillText("Space Bar for Serve", 30, 370);
+
   //------ Dibujar el tanteo
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "white";
   ctx.fillText("Gryffindor: " +scoreI, 110, 50);
   ctx.fillText("Slytherin: " +scoreD, 320, 50);
   ctx.beginPath();
+
+if ((scoreD == 0) & (scoreI==0)){
+  ctx.font = "40px HARRYP__";
+  ctx.fillStyle = "#A98727";
+  ctx.fillText("SpaceBar for Serve", 30, 370);
+}
 
 }
 
@@ -106,7 +111,7 @@ function animacion()
     sonido_tanto.play();
     console.log('gooooool de gryyyyfindooor');
     estado = ESTADO.SAQUE;
-     bola.init();
+     bola.dcha();
      console.log("Tanto!!!!");
      return;
   } else if (bola.x <= (canvas.width==0)){
@@ -155,6 +160,7 @@ sonido_raqueta.play();
     raqD.y = raqD.y * -1;
   }
 
+
   //-- Actualizar coordenada x de la bola, en funcion de
   //-- su velocidad
   bola.update()
@@ -197,6 +203,8 @@ setInterval(()=>{
     if (estado == ESTADO.INIT)
       return;
 
+
+
     switch (e.key) {
       case "a":
         raqI.v = raqI.v_ini;
@@ -219,10 +227,11 @@ setInterval(()=>{
           sonido_raqueta.play();
 
           //-- Llevar bola a su posicion incicial
+          
           bola.init();
 
           //-- Darle velocidad
-          bola.vx = bola.vx_ini;
+            bola.vx = bola.vx_ini;
             bola.vy = bola.vy_ini;
 
           //-- Cambiar al estado de jugando!
