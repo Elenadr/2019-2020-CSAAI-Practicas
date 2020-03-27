@@ -38,7 +38,7 @@ if (estado == ESTADO.JUGANDO) {
  bola.draw();
 }
   //----- Dibujar la Bola
-  bola.draw();
+
 
   //-- Dibujar las raquetas
   raqI.draw();
@@ -73,12 +73,12 @@ if (estado == ESTADO.INIT) {
 if (estado == ESTADO.SAQUE) {
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "#A98727";
-  ctx.fillText("Space Bar for Serve", 30, 350);
+  ctx.fillText("Space Bar for Serve", 30, 370);
   //------ Dibujar el tanteo
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "white";
-  ctx.fillText("Gryffindor: " +scoreI, 30, 80);
-  ctx.fillText("Slytherin: " +scoreD, 340, 80);
+  ctx.fillText("Gryffindor: " +scoreI, 110, 50);
+  ctx.fillText("Slytherin: " +scoreD, 320, 50);
   ctx.beginPath();
 
 }
@@ -154,6 +154,7 @@ sonido_raqueta.play();
   if (raqD.y <=0){
     raqD.y = raqD.y * -1;
   }
+
   //-- Actualizar coordenada x de la bola, en funcion de
   //-- su velocidad
   bola.update()
@@ -253,7 +254,7 @@ stop.onclick = () => {
   bola.init();
   console.log('stop');
    scoreD=0;
-  scoreI=0;
+   scoreI=0;
 
 
 }
