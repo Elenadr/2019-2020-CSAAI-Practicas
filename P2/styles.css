@@ -104,4 +104,10 @@ button{
   font-family: "HARRYP__";
   font-size: 40px;
     border-radius: 40px;
+
+}
+button:hover {
+  background-color:black ;
+  color: white;
+
 }

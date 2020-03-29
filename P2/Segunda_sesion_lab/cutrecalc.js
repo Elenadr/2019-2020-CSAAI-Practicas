@@ -11,6 +11,16 @@ const gui ={
   igual:document.getElementById("igual"),
   clear:document.getElementById("clear"),
 }
+//--Estados calculadora
+const ESTADO = {
+  INIT: 0,
+  OP1: 1,
+  OPERATION: 2,
+  OP2_INIT: 3,
+  OP2: 4,
+}
+//-- Arrancamos desde el estado inicial
+let estado = ESTADO.INIT;
 
 // -- Insertar digito 1
 boton1.onclick = () => {
