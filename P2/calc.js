@@ -11,7 +11,8 @@ const gui ={
   equal:document.getElementById("equal"),
   dot:document.getElementById("dot")
 }
-
+var num= false;
+var op = false;
 let digitos = document.getElementsByClassName("cdigito");
 //--Estados calculadora
 const ESTADO = {
@@ -21,18 +22,28 @@ const ESTADO = {
   OP2_INIT: 3,
   OP2: 4,
 }
+//-- Variable de estado
+//-- Arrancamos desde el estado inicial
+let estado = ESTADO.INIT;
 
-function operation(operator)
+//-- Ha llegado un dígito
+function number(num)
 {
-  if (ESTADO.OP1 == operator){
-    estado = ESTADO.OPERAION;
-    console.log('OP1');
+  //-- Segun el estado hacemos una cosa u otra
+  if (estado == ESTADO.INIT) {
+    display.innerHTML = num;
+    num= True;
+    estado = ESTADO.OP1;
+  }
+  if (estado == ESTADO.OP1){
+    display.innerHTML = op;
+    estado = ESTADO.OPERATION;
   }
   if (estado == ESTADO.OPERATION){
-    display.innerHTML=operator;
-    estado=ESTADO.OP2;
-    console.log('OPERATION');
+    display.innerHTML = num;
+    estado = ESTADO.OP2_INIT;
   }
+  // .......... Resto del código
 }
 
 for (i=0; i<digitos.length; i++){
