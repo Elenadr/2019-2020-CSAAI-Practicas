@@ -4,7 +4,7 @@ console.log("Launching Javascript... ");
 
 const gui ={
   display:document.getElementById("display"),
-  delete:document.getElementById("delete"),
+  delet:document.getElementById("delete"),
   clear:document.getElementById("clear"),
   exp:document.getElementById("exp"),
   ans:document.getElementById("ans"),
@@ -21,23 +21,7 @@ const ESTADO = {
   OP2_INIT: 3,
   OP2: 4,
 }
-//-- Arrancamos desde el estado inicial
-let estado = ESTADO.INIT;
 
-//-- Ha llegado un dígito
-function number(digitos)
-{
-  //-- Segun el estado hacemos una cosa u otra
-  if (estado == ESTADO.INIT) {
-    display.innerHTML = digitos;
-    estado = ESTADO.OP1;
-  }
-  if (estado == ESTADO.OP1){
-    display.innerHTML = operator;
-    estado = ESTADO.
-  }
-  // .......... Resto del código
-}
 function operation(operator)
 {
   if (ESTADO.OP1 == operator){
@@ -78,7 +62,10 @@ equal.onclick = () => {
   display.innerHTML = eval(display.innerHTML);
     console.log("click en el =");
 }
-
+//-- Borrar último digito
+delet.onclick = () => {
+  display.innerHTML = display.innerHTML.slice(0,-1);
+}
 //-- Poner a cero la expresion
 clear.onclick = () => {
   display.innerHTML = "0";
