@@ -7,11 +7,11 @@ class Bola {
     this.size = 6;
 
     //-- Contante: Posicion inicial de la bola
-    this.x_ini = 100;
-    this.y_ini = 200;
+    this.x_ini = 540;
+    this.y_ini = 300;
     // Constante: Posicion derecha de la bola
-    this.x_dcha = 540;
-    this.y_dcha = 300;
+    this.x_dcha = 80;
+    this.y_dcha = 140;
     //-- Posicion generica de la bola
     this.x = 0;
     this.y = 0;

@@ -137,15 +137,15 @@ function animacion()
       (raqD.v <= 0)) {
         bola.vx = bola.vx * -1;
         //-- Reproducir sonido
-sonido_raqueta.currentTime = 0;
-sonido_raqueta.play();
+        sonido_raqueta.currentTime = 0;
+        sonido_raqueta.play();
   } else {
 
   }
   //-- Comprobar si hay colisión con la raqueta izquierda
   if (bola.x >= raqI.x && bola.x <=(raqI.x + raqI.width) &&
       bola.y >= raqI.y && bola.y <=(raqI.y + raqI.height)) {
-    bola.vx = bola.vx * -1;
+        bola.vx = bola.vx * -1;
     //-- Reproducir sonido
     sonido_raqueta.currentTime = 0;
     sonido_raqueta.play();
@@ -227,7 +227,7 @@ setInterval(()=>{
           sonido_raqueta.play();
 
           //-- Llevar bola a su posicion incicial
-          
+
           bola.init();
 
           //-- Darle velocidad
