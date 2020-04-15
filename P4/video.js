@@ -7,7 +7,8 @@ video1.height=400;
 
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
-video1.poster="https://github.com/myTeachingURJC/2019-2020-CSAAI/raw/master/L10/test.png";
+video1.poster="https://github.com/Elenadr/2019-2020-CSAAI-Practicas/tree/master/P4/hp3.png";
+
 
 //-- Obtener los botones
 const play = document.getElementById("play")
