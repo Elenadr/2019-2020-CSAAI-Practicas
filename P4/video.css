@@ -9,18 +9,15 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-canvas{
-   background-color: #24361b;
-   background-size: cover;
-   padding-left: 0;
-   padding-right: 0;
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-   border-radius: 30px;
-   border: #533E03 8px solid;
-}
 
+.video1{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
 h1{
   font-family: "HARRYP__";
   font-size: 70px;

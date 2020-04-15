@@ -2,12 +2,12 @@ console.log("Ejecutando JS...");
 
 //----- Obtener elemento de video y configurarlo
 const video1 = document.getElementById("video1")
-video1.width=700;  //-- Tamaño de la pantalla de video
-video1.height=400;
-
+video1.width=500;  //-- Tamaño de la pantalla de video
+video1.height=300;
+  video1.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
-video1.poster="https://github.com/Elenadr/Resources/raw/master/hp3.png"
+
 
 
 //-- Obtener los botones
@@ -15,11 +15,11 @@ const play = document.getElementById("play")
 const stop = document.getElementById("stop")
 
 //-- Función de retrollamada del botón de ver
-play.onclick = () => {
-  console.log("Click!");
-  video1.src="https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente1.mp4"
-  video1.play();
-};
+//play.onclick = () => {
+//  console.log("Click!");
+//  video1.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
+//  video1.play();
+//};
 
 //-- Funcion de retrollamada del boton de parar
 stop.onclick = () => {
