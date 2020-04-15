@@ -1,0 +1,53 @@
+@font-face
+{
+   font-family: "HARRYP__";
+   src: url("HARRYP__.TTF");
+}
+
+body{
+    background-image: url("ppp.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+canvas{
+   background-color: #24361b;
+   background-size: cover;
+   padding-left: 0;
+   padding-right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   border-radius: 30px;
+   border: #533E03 8px solid;
+}
+
+h1{
+  font-family: "HARRYP__";
+  font-size: 70px;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  margin-bottom: 0px;
+  color:#A98727;
+  text-shadow:#CEAB46 2px 0;
+  -webkit-text-stroke: 0.03px #533E03;
+}
+button{
+  font-family: "HARRYP__";
+  background-color: #533E03;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 15px;
+  display:inline-block;
+  border-width: 3px;
+  border-color: white
+}
+
+button:hover {
+  background-color:#24361b; /* Green */
+  color: #CEAB46 ;
+  border-color:  #533E03;
+  border-width: 3px;
+}
