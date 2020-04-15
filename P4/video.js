@@ -7,7 +7,7 @@ video1.height=400;
 
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
-video1.poster="https://github.com/Elenadr/Resources/blob/master/hp3.png"
+video1.poster="https://github.com/Elenadr/Resources/raw/master/hp3.png"
 
 
 //-- Obtener los botones
