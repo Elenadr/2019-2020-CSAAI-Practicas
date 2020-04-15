@@ -2,8 +2,8 @@ console.log("Ejecutando JS...");
 
 //----- Obtener elemento de video y configurarlo
 const video1 = document.getElementById("video1")
-video1.width=200;  //-- Tamaño de la pantalla de video
-video1.height=100;
+video1.width=700;  //-- Tamaño de la pantalla de video
+video1.height=400;
 
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
