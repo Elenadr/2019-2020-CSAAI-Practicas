@@ -32,3 +32,13 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
+.videouno{
+  display: inline-block;
+  position:relative;
+}
+.videodos{
+    display: inline-block;
+}
+.videotres{
+    display: inline-block;
+}
