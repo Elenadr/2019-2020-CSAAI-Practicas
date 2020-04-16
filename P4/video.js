@@ -1,7 +1,7 @@
 console.log("Ejecutando JS...");
 
 //----- Obtener elemento de video y configurarlo
-const video1 = document.getElementById("video1")
+
 video1.width=300;  //-- Tamaño de la pantalla de video
 video1.height=200;
   video1.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
@@ -18,3 +18,12 @@ video1.height=200;
 
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
+document.getElementById("video1").onmouseenter = function() {mouseEnter()};
+document.getElementById("video1").onmouseleave = function() {mouseLeave()};
+function mouseEnter() {
+  video1.muted=false;
+}
+
+function mouseLeave() {
+  video1.muted=true;
+}
