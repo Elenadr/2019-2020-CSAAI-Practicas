@@ -6,8 +6,6 @@
 
 body{
     background-color: lightblue;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 h1{
@@ -32,13 +30,49 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
-.videouno{
-  display: inline-block;
-  position:relative;
+#videouno{
+  margin:auto;
+   padding-left: 30px;
+   padding-right: 30px;
+  float:left;
+  width: 70px;
+  height: 70px;
 }
-.videodos{
-    display: inline-block;
+#videodos{
+  margin:auto;
+   padding-left: 30px;
+   padding-right: 30px;
+  float:left;
+  width: 70px;
+  height: 70px;
 }
-.videotres{
-    display: inline-block;
+#videotres{
+  margin:auto;
+   padding-left: 30px;
+   padding-right: 30px;
+  float:left;
+  width: 70px;
+  height: 70px;
+
+}
+button{
+  font-family: "HARRYP__";
+  background-color: #533E03;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+button:hover {
+  background-color:#24361b; /* Green */
+  color: #CEAB46 ;
+  border-color:  #533E03;
+  border-width: 3px;
 }
