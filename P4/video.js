@@ -23,7 +23,7 @@ video4.poster="https://github.com/Elenadr/Resources/raw/master/hp14.png";
 
 const play1 = document.getElementById("play1");
 play1.onclick = () => {
-  console.log("Click!");
+  console.log("Click 1");
   video4.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
   video4.muted=false;
   video4.loop=false;
@@ -31,8 +31,16 @@ play1.onclick = () => {
 
 const play2 = document.getElementById("play2");
 play2.onclick = () => {
-  console.log("Click!");
+  console.log("Click 2");
   video4.src="https://github.com/Elenadr/Resources/raw/master/hermone.mp4"
+  video4.muted=false;
+  video4.loop=false;
+};
+
+const play3 = document.getElementById("play3");
+play3.onclick = () => {
+  console.log("Click 3");
+  video4.src="https://github.com/Elenadr/Resources/raw/master/voldemort.mp4"
   video4.muted=false;
   video4.loop=false;
 };
