@@ -2,30 +2,19 @@ console.log("Ejecutando JS...");
 
 //----- Obtener elemento de video y configurarlo
 const video1 = document.getElementById("video1")
-video1.width=500;  //-- Tamaño de la pantalla de video
-video1.height=300;
+video1.width=300;  //-- Tamaño de la pantalla de video
+video1.height=200;
   video1.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
+
+  const video2 = document.getElementById("video2")
+  video2.width=300;  //-- Tamaño de la pantalla de video
+  video2.height=200;
+  video2.src="https://github.com/Elenadr/Resources/raw/master/hermone.mp4"
+
+  const video3 = document.getElementById("video3")
+  video3.width=300;  //-- Tamaño de la pantalla de video
+  video3.height=200;
+  video3.src="https://github.com/Elenadr/Resources/raw/master/voldemort.mp4"
+
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
-
-
-
-//-- Obtener los botones
-const play = document.getElementById("play")
-const stop = document.getElementById("stop")
-
-//-- Función de retrollamada del botón de ver
-//play.onclick = () => {
-//  console.log("Click!");
-//  video1.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
-//  video1.play();
-//};
-
-//-- Funcion de retrollamada del boton de parar
-stop.onclick = () => {
-  video1.pause();
-
-  //-- Quitar la fuente de video, para que se muestre la
-  //-- imagen definida en el atributo poster
-  video1.src=null;
-}
