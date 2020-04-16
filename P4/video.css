@@ -21,3 +21,14 @@ h1{
   text-shadow:#CEAB46 2px 0;
   -webkit-text-stroke: 0.03px #533E03;
 }
+canvas{
+   background-color: #24361b;
+   background-size: cover;
+   padding-left: 0;
+   padding-right: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   border-radius: 30px;
+   border: #533E03 8px solid;
+}
