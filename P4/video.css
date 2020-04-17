@@ -30,30 +30,27 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
-#videouno{
+.videouno{
   margin:auto;
-   padding-left: 30px;
-   padding-right: 30px;
-  float:left;
-  width: 70px;
-  height: 70px;
-}
-#videodos{
-  margin:auto;
-   padding-left: 30px;
-   padding-right: 30px;
-  float:left;
-  width: 70px;
-  height: 70px;
-}
-#videotres{
-  margin:auto;
-   padding-left: 30px;
-   padding-right: 30px;
-  float:left;
-  width: 70px;
-  height: 70px;
 
+  float:left;
+
+}
+.videodos{
+  margin:auto;
+
+  float:left;
+
+}
+.videotres{
+  margin:auto;
+
+  float:left;
+}
+
+.menuvideos{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 button{
   font-family: "HARRYP__";
