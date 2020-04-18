@@ -2,24 +2,25 @@ console.log("Ejecutando JS...");
 
 //----- Obtener elemento de video y configurarlo
   const video1 = document.getElementById("video1")
-  video1.width=400;  //-- Tamaño de la pantalla de video
-video1.height=300;
+  video1.width=426;  //-- Tamaño de la pantalla de video
+  video1.height=240;
+
   video1.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
 
   const video2 = document.getElementById("video2")
-  video2.width=400;  //-- Tamaño de la pantalla de video
-  video2.height=300;
+  video2.width=426;  //-- Tamaño de la pantalla de video
+  video2.height=240;
   video2.src="https://github.com/Elenadr/Resources/raw/master/hermone.mp4"
 
   const video3 = document.getElementById("video3")
-  video3.width=400;  //-- Tamaño de la pantalla de video
-  video3.height=300;
+  video3.width=420;  //-- Tamaño de la pantalla de video
+  video3.height=236;
   video3.src="https://github.com/Elenadr/Resources/raw/master/voldemort.mp4"
 
 const video4 = document.getElementById("video4");
 video4.width=900;  //-- Tamaño de la pantalla de video
 video4.height=700;
-video4.poster="https://github.com/Elenadr/Resources/raw/master/aciion.gif";
+video4.poster="https://github.com/Elenadr/Resources/raw/master/ji.webp";
 
 const play1 = document.getElementById("play1");
 
@@ -29,6 +30,9 @@ play1.onclick = () => {
     video4.src=video1.src;
     video4.loop=false;
     video4.muted=false;
+    document.getElementById("video1").style.border = "thick solid red";
+    document.getElementById("video2").style.border = "none";
+    document.getElementById("video3").style.border = "none";
 };
 
 var muted = document.getElementById("muted");
@@ -61,6 +65,9 @@ play2.onclick = () => {
   video4.src=video2.src;
   video4.muted=false;
   video4.loop=false;
+  document.getElementById("video1").style.border = "none";
+  document.getElementById("video2").style.border = "thick solid red";
+  document.getElementById("video3").style.border = "none";
 };
 
 const play3 = document.getElementById("play3");
@@ -69,7 +76,12 @@ play3.onclick = () => {
   video4.src=video3.src;
   video4.muted=false;
   video4.loop=false;
+  document.getElementById("video1").style.border = "none";
+  document.getElementById("video2").style.border = "none";
+  document.getElementById("video3").style.border = "thick solid red";
 };
+
+
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
 //document.getElementById("video1").onmouseenter = function() {mouseEnter()};
