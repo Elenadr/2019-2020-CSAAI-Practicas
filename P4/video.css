@@ -30,12 +30,14 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
+
 .videouno{
   margin:auto;
   padding: 10px;
   float:left;
   text-align: center;
     padding-bottom: 0px;
+
 
 }
 .videodos{
@@ -54,24 +56,6 @@ canvas{
     text-align: center;
 }
 
-.menuvideos{
-justify-content: center;
-text-align: center;
-padding:0;
-margin-left: auto;
-margin-right: auto;
-display: block;
-}
-.videoprincipal{
-  margin: auto;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
 button{
   font-family: "HARRYP__";
   background-color: #533E03;
