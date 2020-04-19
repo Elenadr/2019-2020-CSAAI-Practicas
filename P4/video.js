@@ -18,8 +18,8 @@ console.log("Ejecutando JS...");
   video3.src="https://github.com/Elenadr/Resources/raw/master/voldemort.mp4"
 
 const video4 = document.getElementById("video4");
-video4.width=900;  //-- Tamaño de la pantalla de video
-video4.height=700;
+video4.width=840;  //-- Tamaño de la pantalla de video
+video4.height=480;
 video4.poster="https://github.com/Elenadr/Resources/raw/master/ji.webp";
 
 const play1 = document.getElementById("play1");
@@ -35,11 +35,6 @@ play1.onclick = () => {
     document.getElementById("video3").style.border = "none";
 };
 
-var muted = document.getElementById("muted");
-muted.onclick = () => {
-  console.log("Muted true");
-    video4.muted=true;
-};
 
 var loop = document.getElementById("loop");
 loop.onclick = () => {
@@ -49,12 +44,6 @@ loop.onclick = () => {
 var noloop = document.getElementById("noloop");
 noloop.onclick = () => {
   console.log("No loop");
-    video4.muted=false;
-};
-
-var unmuted = document.getElementById("unmuted");
-unmuted.onclick = () => {
-  console.log("loop true");
     video4.muted=false;
 };
 
@@ -68,6 +57,7 @@ play2.onclick = () => {
   document.getElementById("video1").style.border = "none";
   document.getElementById("video2").style.border = "thick solid red";
   document.getElementById("video3").style.border = "none";
+
 };
 
 const play3 = document.getElementById("play3");
