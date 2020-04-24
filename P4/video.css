@@ -31,7 +31,7 @@ canvas{
    border: #533E03 8px solid;
 }
 
-.videouno{
+.fuenteuno{
   margin:auto;
   padding: 20px;
   float:left;
@@ -40,7 +40,7 @@ canvas{
 
 
 }
-.videodos{
+.fuentedos{
   margin:auto;
   padding: 10px;
   float:left;
@@ -48,7 +48,14 @@ canvas{
       padding-bottom: 0px;
 
 }
-.videotres{
+.fuentetres{
+  margin:auto;
+  padding: 10px;
+  padding-bottom: 0px;
+  float:left;
+    text-align: center;
+}
+.fuentecuatro{
   margin:auto;
   padding: 10px;
   padding-bottom: 0px;
@@ -62,7 +69,7 @@ canvas{
     text-align: center;
     width: 1000px;
     height: 500px;
-    margin-top: 200px;
+
     margin-left: auto;
     margin-right: auto;
 }

@@ -22,17 +22,23 @@ video4.width=840;  //-- Tamaño de la pantalla de video
 video4.height=480;
 video4.poster="https://github.com/Elenadr/Resources/raw/master/ji.webp";
 
+const imagen = document.getElementById("imagen");
+imagen.width=426;
+imagen.height=240;
+
 const play1 = document.getElementById("play1");
 
 
 play1.onclick = () => {
   console.log("Click 1");
+    video4.poster=false;
     video4.src=video1.src;
-    video4.loop=false;
     video4.muted=false;
-    document.getElementById("video1").style.border = "thick solid red";
-    document.getElementById("video2").style.border = "none";
-    document.getElementById("video3").style.border = "none";
+    video1.style.border = "thick solid red";
+    video2.style.border = "none";
+    video3.style.border = "none";
+    imagen.style.border = "none";
+    
 };
 
 
@@ -51,26 +57,38 @@ noloop.onclick = () => {
 const play2 = document.getElementById("play2");
 play2.onclick = () => {
   console.log("Click 2");
+  video4.poster=false;
   video4.src=video2.src;
   video4.muted=false;
-  video4.loop=false;
-  document.getElementById("video1").style.border = "none";
-  document.getElementById("video2").style.border = "thick solid red";
-  document.getElementById("video3").style.border = "none";
+  video1.style.border = "none";
+  video2.style.border = "thick solid red";
+  video3.style.border = "none";
+  imagen.style.border = "none";
 
 };
 
 const play3 = document.getElementById("play3");
 play3.onclick = () => {
   console.log("Click 3");
+  video4.poster=false;
   video4.src=video3.src;
   video4.muted=false;
-  video4.loop=false;
-  document.getElementById("video1").style.border = "none";
-  document.getElementById("video2").style.border = "none";
-  document.getElementById("video3").style.border = "thick solid red";
+  video1.style.border = "none";
+  video2.style.border = "none";
+  video3.style.border = "thick solid red";
+  imagen.style.border = "none";
+
 };
 
+const static = document.getElementById("static");
+static.onclick = () => {
+  console.log("Estatico");
+  video4.poster=imagen.src;
+  video1.style.border = "none";
+  video2.style.border = "none";
+  video3.style.border = "none";
+  imagen.style.border = "thick solid red";
+};
 
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
