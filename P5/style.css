@@ -6,6 +6,7 @@
 
 body{
     background-color: lightblue;
+    text-align: center;
 }
 
 h1{
@@ -20,10 +21,10 @@ h1{
   -webkit-text-stroke: 0.03px #533E03;
 }
 
-img{
-  width: 500px;
+.images{
+  column-count: 2;
+  text-align:center;
 }
-
 button{
   font-family: "HARRYP__";
   background-color: #533E03;

@@ -5,6 +5,7 @@ const canvas = document.getElementById('canvas');
 const img = document.getElementById('imagesrc');
 const ctx = canvas.getContext('2d');
 
+
 //-- Acceso al deslizador
 const deslizador = document.getElementById('deslizador');
 
@@ -15,20 +16,14 @@ const range_value = document.getElementById('range_value');
 //-- La imagen no se carga instantaneamente, sino que
 //-- lleva un tiempo. Sólo podemos acceder a ella una vez
 //-- que esté totalmente cargada
-img.onload = function () {
+canvas.width = img.width;
+canvas.height = img.height;
+//-- Obtener el contexto del canvas para trabajar con el
 
-  //-- Se establece como tamaño del canvas el mismo
-  //-- que el de la imagen original
-  canvas.width = img.width;
-  canvas.height = img.height;
 
-  //-- Situar la imagen original en el canvas
-  //-- No se han hecho manipulaciones todavia
-  ctx.drawImage(img, 0,0);
-
-  console.log("Imagen lista...");
-};
-
+//-- Situar la imagen original en el canvas
+//-- No se han hecho manipulaciones todavia
+ctx.drawImage(img, 0,0);
 
 //-- Funcion de retrollamada del deslizador
 deslizador.oninput = () => {

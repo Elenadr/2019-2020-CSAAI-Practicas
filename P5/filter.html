@@ -7,13 +7,25 @@
     <script src="filter.js" defer></script>
   </head>
   <body>
+    <div class="images">
+
+
+
+    <h1>Imagen Original</h1>
+    <img src="hermione.jpg" id="imagesrc">
+    <h1>Imagen Manipulada</h1>
     <canvas id="canvas"></canvas>
-    <img src="friend.jpg" id="imagesrc">
+      </div>
+
+      <div class="controls">
+
+
     <p>Establece el umbral de rojo:</p>
     <input type="range" id="deslizador" min="0" max="255" value="255"/>
     <p id="range_value">00</p>
     <p>Establece el umbral de verde</p>
     <input type="range" id="deslizadorverde" min="0" max="255" value="255"/>
     <p id="range_value">00</p>
+        </div>
   </body>
 </html>
