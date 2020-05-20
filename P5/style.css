@@ -1,0 +1,47 @@
+@font-face
+{
+   font-family: "HARRYP__";
+   src: url("HARRYP__.TTF");
+}
+
+body{
+    background-color: lightblue;
+}
+
+h1{
+  font-family: "HARRYP__";
+  font-size: 70px;
+  text-align: center;
+  padding: 10px;
+  margin: 50px;
+  margin-bottom: 0px;
+  color:#A98727;
+  text-shadow:#CEAB46 2px 0;
+  -webkit-text-stroke: 0.03px #533E03;
+}
+
+img{
+  width: 500px;
+}
+
+button{
+  font-family: "HARRYP__";
+  background-color: #533E03;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 15px;
+  border-width: 3px;
+  border-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+button:hover {
+  background-color:#24361b; /* Green */
+  color: #CEAB46 ;
+  border-color:  #533E03;
+  border-width: 3px;
+}
