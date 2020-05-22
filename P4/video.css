@@ -77,17 +77,24 @@ border-radius: 50px;
   padding-bottom: 0px;
     text-align: center;
 display: inline-flex;
+margin-right: 10px;
 
-    margin-left: auto;
-    margin-right: auto;
+
 }
 #video4{
   border: none;
 
+
 }
 .menu{
   float: right;
-
+    margin-left: 10px;
+    width:30%;
+}
+.princu{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 button{
   font-family: "HARRYP__";
