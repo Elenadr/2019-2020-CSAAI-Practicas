@@ -5,7 +5,10 @@
 }
 
 body{
-    background-color: lightblue;
+    background-image: url("how.png");
+    background-size: cover;
+    background-position: center;
+
 }
 
 h1{
@@ -31,6 +34,11 @@ canvas{
    border: #533E03 8px solid;
 }
 
+video{
+border: #533E03 4px solid;
+border-radius: 50px;
+}
+
 .fuenteuno{
   margin:auto;
   padding: 20px;
@@ -49,14 +57,15 @@ canvas{
 
 }
 .fuentetres{
-  margin:auto;
+  margin:20px;
   padding: 10px;
   padding-bottom: 0px;
   float:left;
     text-align: center;
 }
 .fuentecuatro{
-  margin:auto;
+  margin-top: 50px;
+  margin:20px;
   padding: 10px;
   padding-bottom: 0px;
   float:left;
@@ -67,14 +76,18 @@ canvas{
   padding: 10px;
   padding-bottom: 0px;
     text-align: center;
-    width: 1000px;
-    height: 500px;
+display: inline-flex;
 
     margin-left: auto;
     margin-right: auto;
 }
+#video4{
+  border: none;
+
+}
 .menu{
-  margin:30px;
+  float: right;
+
 }
 button{
   font-family: "HARRYP__";
@@ -92,8 +105,8 @@ button{
 
 
 button:hover {
-  background-color:#24361b; /* Green */
-  color: #CEAB46 ;
+  background-color:silver; /* Green */
+  color: #533E03 ;
   border-color:  #533E03;
   border-width: 3px;
 }
