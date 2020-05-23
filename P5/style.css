@@ -5,8 +5,7 @@
 }
 
 body{
-    background-color: lightblue;
-    text-align: center;
+    background-color: black;
 }
 
 h1{
@@ -19,6 +18,12 @@ h1{
   color:#A98727;
   text-shadow:#CEAB46 2px 0;
   -webkit-text-stroke: 0.03px #533E03;
+}
+p{
+  font-family: "HARRYP__";
+
+  color:#A98727;
+
 }
 
 .images{
@@ -41,7 +46,7 @@ button{
 
 
 button:hover {
-  background-color:#24361b; /* Green */
+  background-color:silver; /* Green */
   color: #CEAB46 ;
   border-color:  #533E03;
   border-width: 3px;
