@@ -7,4 +7,6 @@ Implementado:
 Parte básica
 <br>
 Parte avanzada
-<b> </b>
+<br>
+<b> Botón tests</b>
+Este botón pone imagen estática y se puede pulsar en cualquier momento
