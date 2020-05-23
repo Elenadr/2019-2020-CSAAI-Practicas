@@ -2,8 +2,10 @@ console.log("Ejecutando JS....")
 
 //-- Obtener elementos del DOM
 const canvas = document.getElementById('canvas');
-const img = document.getElementById('imagesrc');
+const image1 = document.getElementById('image1');
+const image2 = document.getElementById('image2');
 const ctx = canvas.getContext("2d");
+
 
 
 
@@ -15,12 +17,24 @@ const range_value = document.getElementById('range_value');
 
 //-- Función de retrollamada de imagen cargada
 
-img.onload = function () {
-  console.log("Imagen cargada");
+
+image1.onclick = () => {
+  image1.onload = function(){
+  };
+  img = image1;
   canvas.width = img.width;
   canvas.height =  img.height;
-  ctx.drawImage(img,0,0);
-};
+  ctx.drawImage(img, 0,0);
+}
+
+image2.onclick = () => {
+  image2.onload = function(){
+  };
+  img = image2;
+  canvas.width = img.width;
+  canvas.height =  img.height;
+  ctx.drawImage(img, 0,0);
+}
 
 //-- Acceso a los deslizadores
 const deslizadorRojo = document.getElementById('deslizadorRed');

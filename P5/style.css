@@ -5,8 +5,8 @@
 }
 
 body{
-    background-color:lightblue;
-    background-image: url("asi.png")
+    background-color:#d2bfa1;
+    /*background-image: url("asg")*/
 }
 img{
   border: #533E03 8px solid;
@@ -33,13 +33,14 @@ p{
 canvas{
   border: #533E03 8px solid;
   width: 616px;
+  background-image: url("ba.jpg");
 }
 .images{
 
   text-align:center;
 }
 .down{
-  column-count: 2;
+  column-count: 3;
   text-align:center;
 
 }
