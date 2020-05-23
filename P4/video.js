@@ -22,9 +22,7 @@ video4.width=640;  //-- Tamaño de la pantalla de video
 video4.height=380;
 video4.poster="https://github.com/Elenadr/Resources/raw/master/ji.webp";
 
-const imagen = document.getElementById("imagen");
-imagen.width=326;
-imagen.height=140;
+
 
 const play1 = document.getElementById("play1");
 
@@ -46,11 +44,6 @@ var loop = document.getElementById("loop");
 loop.onclick = () => {
   console.log("loop true");
     video4.loop=true;
-};
-var noloop = document.getElementById("noloop");
-noloop.onclick = () => {
-  console.log("No loop");
-    video4.muted=false;
 };
 
 
@@ -80,10 +73,16 @@ play3.onclick = () => {
 
 };
 
+const imagen = document.getElementById("imagen");
+imagen.src="https://github.com/Elenadr/Resources/raw/master/lou.png"
+imagen.width=326;
+imagen.height=140;
+
 const static = document.getElementById("static");
 static.onclick = () => {
   console.log("Estatico");
   video4.poster=imagen.src;
+  video4.src = false;
   video1.style.border = "none";
   video2.style.border = "none";
   video3.style.border = "none";

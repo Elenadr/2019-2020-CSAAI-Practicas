@@ -5,9 +5,11 @@
 }
 
 body{
-    background-color: black;
+    background-color:white;
 }
-
+img{
+  border: #533E03 8px solid;
+}
 h1{
   font-family: "HARRYP__";
   font-size: 70px;
@@ -30,6 +32,11 @@ p{
   column-count: 2;
   text-align:center;
 }
+.down{
+  column-count: 2;
+  text-align:center;
+
+}
 button{
   font-family: "HARRYP__";
   background-color: #533E03;
@@ -43,7 +50,9 @@ button{
   margin-left: 50px;
   margin-right: 50px;
 }
-
+.transformada{
+  float: right;
+}
 
 button:hover {
   background-color:silver; /* Green */
