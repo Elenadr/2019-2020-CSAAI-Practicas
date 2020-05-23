@@ -48,3 +48,12 @@ original.onclick= ()=>{
   ctx.drawImage(img, 0,0);
 }
 console.log("Fin...");
+
+const extra = document.getElementById('extra');
+const imagem =document.getElementById('imagem');
+
+extra.onclick= ()=>{
+  imagem.src="mari.png"
+
+
+};

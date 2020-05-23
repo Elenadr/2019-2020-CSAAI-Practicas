@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color:white;
+    background-color:lightblue;
+    background-image: url("asi.png")
 }
 img{
   border: #533E03 8px solid;
@@ -19,7 +20,9 @@ h1{
   margin-bottom: 0px;
   color:#A98727;
   text-shadow:#CEAB46 2px 0;
-  -webkit-text-stroke: 0.03px #533E03;
+  -webkit-text-stroke: 1.5px #533E03;
+
+
 }
 p{
   font-family: "HARRYP__";
@@ -27,15 +30,21 @@ p{
   color:#A98727;
 
 }
-
+canvas{
+  border: #533E03 8px solid;
+  width: 616px;
+}
 .images{
-  column-count: 2;
+
   text-align:center;
 }
 .down{
   column-count: 2;
   text-align:center;
 
+}
+.transformada{
+  margin-left: 20px;
 }
 button{
   font-family: "HARRYP__";
@@ -50,9 +59,7 @@ button{
   margin-left: 50px;
   margin-right: 50px;
 }
-.transformada{
-  float: right;
-}
+
 
 button:hover {
   background-color:silver; /* Green */
