@@ -23,8 +23,8 @@ video4.height=380;
 video4.poster="https://github.com/Elenadr/Resources/raw/master/ji.webp";
 
 const imagen = document.getElementById("imagen");
-imagen.width=426;
-imagen.height=240;
+imagen.width=326;
+imagen.height=140;
 
 const play1 = document.getElementById("play1");
 
