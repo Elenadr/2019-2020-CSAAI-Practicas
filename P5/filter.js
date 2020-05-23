@@ -41,6 +41,7 @@ grey.onclick= ()=>{
   //--Poner la imagen modificada en el canvas
   ctx.putImageData(imgData, 0,0);
 }
+
 const original = document.getElementById('original');
 original.onclick= ()=>{
   console.log('original');

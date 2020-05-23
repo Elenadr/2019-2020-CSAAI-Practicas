@@ -66,29 +66,31 @@ border-radius: 50px;
 
 .videocuatro{
 
-  padding: 10px;
-  padding-bottom: 0px;
-    text-align: center;
-display: inline-flex;
-margin-right: 10px;
+padding: 0px;
 
 
+  margin-left: 340px;
+  margin-right: auto;
+  text-align: center;
 }
-#video4{
-  border: none;
-
+  #video4{
+    border: none;
 
 }
 .menu{
-  float: right;
-    margin-left: 10px;
-    width:30%;
+
+
     padding: 10px;
 }
 .princu{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  column-count: 2;
+}
+.pruebas{
+
+  padding:10px;
 }
 button{
   font-family: "HARRYP__";
@@ -100,8 +102,7 @@ button{
   border-radius: 15px;
   border-width: 3px;
   border-color: white;
-  margin-left: 50px;
-  margin-right: 50px;
+
   margin-top: 50px;
 }
 

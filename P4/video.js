@@ -74,14 +74,11 @@ play3.onclick = () => {
 };
 
 const imagen = document.getElementById("imagen");
-imagen.src="https://github.com/Elenadr/Resources/raw/master/lou.png"
-imagen.width=326;
-imagen.height=140;
 
 const static = document.getElementById("static");
 static.onclick = () => {
   console.log("Estatico");
-  video4.poster=imagen.src;
+  video4.poster="https://github.com/Elenadr/Resources/raw/master/DOBY.png"
   video4.src = false;
   video1.style.border = "none";
   video2.style.border = "none";
