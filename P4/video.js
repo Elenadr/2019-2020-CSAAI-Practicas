@@ -35,16 +35,10 @@ play1.onclick = () => {
     video1.style.border = "thick solid red";
     video2.style.border = "#533E03 4px solid"
     video3.style.border = "#533E03 4px solid"
-    imagen.style.border = "none";
+
 
 };
 
-
-var loop = document.getElementById("loop");
-loop.onclick = () => {
-  console.log("loop true");
-    video4.loop=true;
-};
 
 
 const play2 = document.getElementById("play2");
@@ -56,7 +50,7 @@ play2.onclick = () => {
   video1.style.border = "#533E03 4px solid"
   video2.style.border = "thick solid red";
   video3.style.border = "#533E03 4px solid"
-  imagen.style.border = "none";
+
 
 };
 
@@ -69,11 +63,10 @@ play3.onclick = () => {
   video1.style.border = "#533E03 4px solid"
   video2.style.border = "#533E03 4px solid"
   video3.style.border = "thick solid red";
-  imagen.style.border = "none";
 
 };
 
-const imagen = document.getElementById("imagen");
+
 
 const static = document.getElementById("static");
 static.onclick = () => {
@@ -83,9 +76,17 @@ static.onclick = () => {
   video1.style.border = "none";
   video2.style.border = "none";
   video3.style.border = "none";
-  imagen.style.border = "thick solid red";
 };
-
+const muted= document.getElementById("muted");
+muted.onclick = () => {
+  console.log("Muted");
+  video4.muted=true;
+};
+const unmuted= document.getElementById("unmuted");
+unmuted.onclick = () => {
+  console.log("UnMuted");
+  video4.muted=false;
+};
 //-- Imagen estática a mostrar cuando el video no
 //-- ha arrancado
 //document.getElementById("video1").onmouseenter = function() {mouseEnter()};
