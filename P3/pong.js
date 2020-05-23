@@ -117,7 +117,7 @@ function animacion()
   } else if (bola.x <= (canvas.width==0)){
     scoreD++;
     sonido_tanto.currentTime = 0;
-    sonido_tanto.play()
+    sonido_tanto.play();
     console.log('gooooool de slytheryn');
     estado = ESTADO.SAQUE;
      bola.init();
@@ -163,7 +163,7 @@ function animacion()
 
   //-- Actualizar coordenada x de la bola, en funcion de
   //-- su velocidad
-  bola.update()
+  bola.update();
 
   //-- Borrar la pantalla
   ctx.clearRect(0,0, canvas.width, canvas.height);

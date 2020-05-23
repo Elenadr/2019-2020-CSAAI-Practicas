@@ -13,7 +13,7 @@ body{
 
 h1{
   font-family: "HARRYP__";
-  font-size: 70px;
+  font-size: 100px;
   text-align: center;
   padding: 10px;
   margin: 50px;
@@ -72,6 +72,7 @@ border-radius: 50px;
 }
   #video4{
     border: none;
+
 
 }
 .menu{

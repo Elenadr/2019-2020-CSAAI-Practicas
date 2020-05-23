@@ -20,7 +20,8 @@ console.log("Ejecutando JS...");
 const video4 = document.getElementById("video4");
 video4.width=640;  //-- Tamaño de la pantalla de video
 video4.height=380;
-video4.poster="https://github.com/Elenadr/Resources/raw/master/ji.webp";
+video4.poster="https://github.com/Elenadr/Resources/raw/master/intro.gif";
+
 
 
 
