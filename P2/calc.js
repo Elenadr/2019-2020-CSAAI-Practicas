@@ -43,12 +43,9 @@ function number(num)
   }
 }
 
-
 for (i=0; i<digitos.length; i++){
   digitos[i].onclick = (ev)=>{
     number(ev.target.value);
-
-
   }
 }
 
@@ -60,7 +57,7 @@ for (i=0; i<operator.length; i++){
            display.innerHTML += ev.target.value;
            estado = ESTADO.OPERATION;
          }
-  }
+      }
 }
 
 //-- Evaluar la expresion
