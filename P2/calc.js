@@ -11,8 +11,7 @@ const gui ={
   equal:document.getElementById("equal"),
   dot:document.getElementById("dot")
 }
-var num= false;
-var op = false;
+
 let digitos = document.getElementsByClassName("cdigito");
 //--Estados calculadora
 const ESTADO = {
@@ -32,23 +31,31 @@ function number(num)
   //-- Segun el estado hacemos una cosa u otra
   if (estado == ESTADO.INIT) {
     display.innerHTML = num;
-    num= True;
     estado = ESTADO.OP1;
+  }else if (estado == ESTADO.OP1){
+    display.innerHTML += num;
+  }else if (estado == ESTADO.OPERATION) {
+    display.innerHTML += num;
+    estado = ESTADO.OP2_INIT;
+  }else if (estado == ESTADO.OP2_INIT) {
+    display.innerHTML +=  num;
+    estado = ESTADO.OP2;
+  }else if (estado == ESTADO.OP2){
+    display.innerHTML += num;
   }
-  if (estado == ESTADO.OP1){
-    display.innerHTML = op;
+}
+
+  function operators(op){
+  if (estado != ESTADO.OPERATION) {
+    display.innerHTML += op;
     estado = ESTADO.OPERATION;
   }
-  if (estado == ESTADO.OPERATION){
-    display.innerHTML = num;
-    estado = ESTADO.OP2_INIT;
-  }
-  // .......... Resto del código
 }
+
 
 for (i=0; i<digitos.length; i++){
   digitos[i].onclick = (ev)=>{
-    digito(ev.target);
+    number(ev.target.value);
 
   }
 }
@@ -57,14 +64,7 @@ let operator = document.getElementsByClassName("coperator");
 
 for (i=0; i<operator.length; i++){
   operator[i].onclick = (ev)=>{
-    display.innerHTML += ev.target.value;
-  }
-}
-function digito(boton){
-  if(display.innerHTML=="0"){
-    display.innerHTML = boton.value;
-  }else{
-    display.innerHTML += boton.value;
+    operators( ev.target.value);
   }
 }
 
