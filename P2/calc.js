@@ -22,6 +22,7 @@ const ESTADO = {
   OP2_INIT: 3,
   OP2: 4,
 }
+
 //-- Variable de estado
 //-- Arrancamos desde el estado inicial
 let estado = ESTADO.INIT;
@@ -76,9 +77,10 @@ for (i=0; i<operator.length; i++){
 
 //-- Evaluar la expresion
 equal.onclick = () => {
-
+ if(estado == ESTADO.OP1 ||  estado == ESTADO.OP2_INIT){
     display.innerHTML = eval(display.innerHTML);
-
+    estado = ESTADO.OP1;
+  }
 }
 //-- Borrar último digito
 delet.onclick = () => {
