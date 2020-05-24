@@ -24,3 +24,5 @@ A continuación, explicación breve defuncionamiento y mejoras:
 <b>8. Efectos de sonido diferentes </b>
 <br>
 <b>9. Gif con el equipo ganador celebrando mas texto</b>
+<br>
+<b>10. Cambio ángulo</b> al chocar con raqueta o paredes
