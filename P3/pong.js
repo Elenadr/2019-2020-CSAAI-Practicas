@@ -105,12 +105,13 @@ if ((scoreD == 5) ){
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "white";
   document.getElementById('sly_wins').style.display = 'block';
-
+  document.getElementById('gry_wins').style.display = 'none';
 }
 if ((scoreI == 5) ){
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "#A98727";
   document.getElementById('gry_wins').style.display = 'block';
+    document.getElementById('sly_wins').style.display = 'none';
 
 }
 
@@ -256,6 +257,8 @@ setInterval(()=>{
           scoreD = 0;
           scoreI = 0;
           estado=ESTADO.SAQUE;
+          document.getElementById('gry_wins').style.display = 'none';
+          document.getElementById('sly_wins').style.display = 'none';
         }
         break;
       case " ":

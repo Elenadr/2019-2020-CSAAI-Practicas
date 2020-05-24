@@ -20,8 +20,11 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
-img{
-justify-content: center;
+.gry_wins{
+  float:left;
+}
+.sly_wins{
+  float:right;
 }
 h1{
   font-family: "HARRYP__";

@@ -23,4 +23,4 @@ A continuación, explicación breve defuncionamiento y mejoras:
 <br>
 <b>8. Efectos de sonido diferentes </b>
 <br>
-<b>8.</b>
+<b>9. Gif con el equipo ganador celebrando </b>
