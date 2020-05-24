@@ -163,16 +163,4 @@ negativo.onclick = () =>{
   ctx.putImageData(imgData, 0,0);
 }
 
-// Extra
-const extra = document.getElementById('extra');
-const imagem =document.getElementById('imagem');
-  document.getElementById('extra').style.display = 'none';
-  document.getElementById('imagem').style.display = 'none';
-extra.onclick= ()=>{
-  document.getElementById('rangos').style.display = 'none';
-  document.getElementById('imagem').style.display = 'block';
-  imagem.src="mari.png"
-
-};
-
 console.log("Fin...");
