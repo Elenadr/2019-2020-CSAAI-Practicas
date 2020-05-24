@@ -20,7 +20,9 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
-
+img{
+justify-content: center;
+}
 h1{
   font-family: "HARRYP__";
   font-size: 70px;

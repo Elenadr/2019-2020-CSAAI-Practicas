@@ -19,8 +19,10 @@ const ESTADO = {
   SAQUE: 1,
   SAQUE_SL:2,
   JUGANDO: 3,
+  FIN: 4,
 }
-
+document.getElementById('gry_wins').style.display = 'none';
+document.getElementById('sly_wins').style.display = 'none';
 //-- Variable de estado
 //-- Arrancamos desde el estado inicial
 let estado = ESTADO.INIT;
@@ -88,7 +90,31 @@ if ((scoreD == 0) & (scoreI==0)){
 }
 
 }
+if (estado == ESTADO.FIN) {
+  ctx.font = "40px HARRYP__";
+  ctx.fillStyle = "#A98727";
+  ctx.fillText("Press '0' for rematch", 30, 370);
+  //------ Dibujar el tanteo
+  ctx.font = "40px HARRYP__";
+  ctx.fillStyle = "white";
+  ctx.fillText("Gryffindor: " +scoreI, 110, 50);
+  ctx.fillText("Slytherin: " +scoreD, 320, 50);
+  ctx.beginPath();
 
+if ((scoreD == 5) ){
+  ctx.font = "40px HARRYP__";
+  ctx.fillStyle = "white";
+  document.getElementById('sly_wins').style.display = 'block';
+
+}
+if ((scoreI == 5) ){
+  ctx.font = "40px HARRYP__";
+  ctx.fillStyle = "#A98727";
+  document.getElementById('gry_wins').style.display = 'block';
+
+}
+
+}
 
 }
 
@@ -125,7 +151,9 @@ function animacion()
      console.log("Tanto!!!!");
      return;
 }
-
+if (scoreD==5 || scoreI ==5){
+  estado= ESTADO.FIN;
+}
     if (bola.y >= canvas.height){
     bola.vy = bola.vy * -1;
   } else if (bola.y <= 0){
@@ -223,6 +251,13 @@ setInterval(()=>{
       case "L":
         raqD.v = raqD.v_ini;
         break;
+      case "0":
+        if(estado == ESTADO.FIN){
+          scoreD = 0;
+          scoreI = 0;
+          estado=ESTADO.SAQUE;
+        }
+        break;
       case " ":
 
         //-- El saque solo funciona en el estado de SAQUE
@@ -256,6 +291,7 @@ setInterval(()=>{
           //-- Cambiar al estado de jugando!
           estado = ESTADO.JUGANDO;
         }
+
       default:
     }
   }
