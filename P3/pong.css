@@ -20,11 +20,13 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
-.gry_wins{
-  float:left;
+.grywins{
+  display: inline-flex;
+  background-color: black;
 }
-.sly_wins{
-  float:right;
+.slywins{
+  display: inline-flex;
+  background-color: black;
 }
 h1{
   font-family: "HARRYP__";

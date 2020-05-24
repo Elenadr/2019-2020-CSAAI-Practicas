@@ -23,6 +23,8 @@ const ESTADO = {
 }
 document.getElementById('gry_wins').style.display = 'none';
 document.getElementById('sly_wins').style.display = 'none';
+document.getElementById('gry').style.display = 'none';
+document.getElementById('sly').style.display = 'none';
 //-- Variable de estado
 //-- Arrancamos desde el estado inicial
 let estado = ESTADO.INIT;
@@ -106,12 +108,16 @@ if ((scoreD == 5) ){
   ctx.fillStyle = "white";
   document.getElementById('sly_wins').style.display = 'block';
   document.getElementById('gry_wins').style.display = 'none';
+  document.getElementById('gry').style.display = 'none';
+  document.getElementById('sly').style.display = 'block';
 }
 if ((scoreI == 5) ){
   ctx.font = "40px HARRYP__";
   ctx.fillStyle = "#A98727";
   document.getElementById('gry_wins').style.display = 'block';
     document.getElementById('sly_wins').style.display = 'none';
+    document.getElementById('gry').style.display = 'block';
+    document.getElementById('sly').style.display = 'none';
 
 }
 
@@ -259,6 +265,8 @@ setInterval(()=>{
           estado=ESTADO.SAQUE;
           document.getElementById('gry_wins').style.display = 'none';
           document.getElementById('sly_wins').style.display = 'none';
+          document.getElementById('gry').style.display = 'none';
+          document.getElementById('sly').style.display = 'none';
         }
         break;
       case " ":
