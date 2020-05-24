@@ -24,5 +24,6 @@ A continuación, los filtros implementados y explicación breve:
 <br>
 <b>7. Si clickeamos en la imagen que estamos editando en el menu principal</b>será el mismo efecto que tener un filtro que nos devuelva la <b>imagen original</b>.
 <br>
-<b>8.</b> En todo momento y para comodidad del usuario, la imagen que se está editando
-aparece en el menú principa con <b> un marco rojo </b> de manera análoga a la práctica 4.
+<b>8.</b> En todo momento y para comodidad del usuario, la imagen que se está editando aparece en el menú principa con <b> un marco rojo </b> de manera análoga a la práctica 4.
+<br>
+<b>9. Botón extra de Gracias</b> Dedicando a mi hermana las prácticas en agradecimiento por su trabajo como enfermera contra el covid.

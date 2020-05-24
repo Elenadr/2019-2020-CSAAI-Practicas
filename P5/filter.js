@@ -17,6 +17,7 @@ const range_value = document.getElementById('range_value');
 document.getElementById('controls').style.display = 'none';
 document.getElementById('rangos').style.display = 'none';
 document.getElementById('filterlab').style.display = 'none';
+document.getElementById('extra').style.display = 'none';
 
 //--Si pulsamos en imagen 1
 image1.onclick = () => {
@@ -173,7 +174,7 @@ ruido.onclick = () =>{
   //--Obtener el array con todos los píxeles
   let data = imgData.data;
     for (let i = 0, n = data.length; i < n; i += 4) {
-       
+
        let randRed = 0.6 + Math.random() * 0.4;
        let randGreen = 0.6 + Math.random() * 0.4;
        let randBlue = 0.6 + Math.random() * 0.4;
@@ -183,4 +184,11 @@ ruido.onclick = () =>{
     }
     ctx.putImageData(imgData, 0, 0);
 }
+
+const dedicated= document.getElementById('dedicated');
+
+dedicated.onclick = () =>{
+    document.getElementById('extra').style.display = 'block';
+}
+
 console.log("Fin...");
