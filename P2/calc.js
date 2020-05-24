@@ -22,7 +22,6 @@ const ESTADO = {
   OP2_INIT: 3,
   OP2: 4,
 }
-var num=true;
 //-- Variable de estado
 //-- Arrancamos desde el estado inicial
 let estado = ESTADO.INIT;
@@ -51,7 +50,6 @@ function number(num)
   if (estado != ESTADO.OPERATION) {
     display.innerHTML += op;
     estado = ESTADO.OPERATION;
-
   }
 }
 
@@ -68,14 +66,19 @@ let operator = document.getElementsByClassName("coperator");
 
 for (i=0; i<operator.length; i++){
   operator[i].onclick = (ev)=>{
-    operation( ev.target.value);
+    if(estado == ESTADO.OP1){
+           display.innerHTML += ev.target.value;
+           estado = ESTADO.OPERATION;
+         }
   }
 }
 
+
 //-- Evaluar la expresion
 equal.onclick = () => {
-  display.innerHTML = eval(display.innerHTML);
-    console.log("click en el =");
+
+    display.innerHTML = eval(display.innerHTML);
+
 }
 //-- Borrar último digito
 delet.onclick = () => {
@@ -85,4 +88,5 @@ delet.onclick = () => {
 clear.onclick = () => {
   display.innerHTML = "0";
     console.log("clear");
+    estado = ESTADO.INIT;
 }
