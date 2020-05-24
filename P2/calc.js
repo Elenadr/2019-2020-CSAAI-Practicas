@@ -19,8 +19,7 @@ const ESTADO = {
   INIT: 0,
   OP1: 1,
   OPERATION: 2,
-  OP2_INIT: 3,
-  OP2: 4,
+  OP2: 3,
 }
 
 //-- Variable de estado
@@ -38,19 +37,9 @@ function number(num)
     display.innerHTML += num;
   }else if (estado == ESTADO.OPERATION) {
     display.innerHTML += num;
-    estado = ESTADO.OP2_INIT;
-  }else if (estado == ESTADO.OP2_INIT) {
-    display.innerHTML +=  num;
     estado = ESTADO.OP2;
   }else if (estado == ESTADO.OP2){
     display.innerHTML += num;
-  }
-}
-
-  function operation(op){
-  if (estado != ESTADO.OPERATION) {
-    display.innerHTML += op;
-    estado = ESTADO.OPERATION;
   }
 }
 
@@ -74,18 +63,19 @@ for (i=0; i<operator.length; i++){
   }
 }
 
-
 //-- Evaluar la expresion
 equal.onclick = () => {
- if(estado == ESTADO.OP1 ||  estado == ESTADO.OP2_INIT){
+ if(estado == ESTADO.OP1 ||  estado == ESTADO.OP2){
     display.innerHTML = eval(display.innerHTML);
     estado = ESTADO.OP1;
   }
 }
+
 //-- Borrar último digito
 delet.onclick = () => {
   display.innerHTML = display.innerHTML.slice(0,-1);
 }
+
 //-- Poner a cero la expresion
 clear.onclick = () => {
   display.innerHTML = "0";
