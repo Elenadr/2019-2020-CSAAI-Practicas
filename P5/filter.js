@@ -141,6 +141,7 @@ vertical.onclick = () => {
 
 }
 
+//-- Efecto negativo
 const negativo= document.getElementById('negativo');
 negativo.onclick = () =>{
   document.getElementById('rangos').style.display = 'none';
