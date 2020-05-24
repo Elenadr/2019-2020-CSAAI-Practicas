@@ -6,6 +6,7 @@
    font-family: "LUMOS";
    src: url("LUMOS.ttf");
 }
+
 /* Uso font-face para poder usar las fuentes
    descargadas de internet que quiero usar. */
 @font-face
@@ -13,6 +14,7 @@
    font-family: "HARRYP__";
    src: url("HARRYP__.TTF");
 }
+
 /* Estilo del body, solo usado para background-image */
 body {
   background-image: url("pergaminonew.png");
@@ -30,6 +32,7 @@ h1 {
   margin: 50px;
   margin-bottom: 0px;
   }
+
  /* Estilo del cuerpo, excluyendo el título*/
  .cuerpo{
     display: inline-flex;
@@ -77,11 +80,13 @@ aside{
   padding:15px;
   text-align: justify;
 }
+
 /* Estilo del gif */
 .gif{
   position: absolute;
   left:260px;
 }
+
 /* Estilo de la imagen principal */
 .imagen{
   float:inherit;
