@@ -21,6 +21,7 @@ const ESTADO = {
   OP2_INIT: 3,
   OP2: 4,
 }
+var num=true;
 //-- Variable de estado
 //-- Arrancamos desde el estado inicial
 let estado = ESTADO.INIT;
@@ -45,7 +46,7 @@ function number(num)
   }
 }
 
-  function operators(op){
+  function operation(op){
   if (estado != ESTADO.OPERATION) {
     display.innerHTML += op;
     estado = ESTADO.OPERATION;
@@ -64,7 +65,7 @@ let operator = document.getElementsByClassName("coperator");
 
 for (i=0; i<operator.length; i++){
   operator[i].onclick = (ev)=>{
-    operators( ev.target.value);
+    operation( ev.target.value);
   }
 }
 
