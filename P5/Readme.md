@@ -26,4 +26,4 @@ A continuación, los filtros implementados y explicación breve:
 <br>
 <b>8.</b> En todo momento y para comodidad del usuario, la imagen que se está editando aparece en el menú principa con <b> un marco rojo </b> de manera análoga a la práctica 4.
 <br>
-<b>9. Botón extra de Gracias imagen más música</b> Dedicando a mi hermana las prácticas en agradecimiento por su trabajo como enfermera contra el covid.
+<b>9. Botón extra de Gracias (imagen más música)</b> en homenaje a los sanitarios especialmente a mi hermana que ha dado el okey a las prácticas y en agradecimiento por su trabajo como enfermera contra el covid.
