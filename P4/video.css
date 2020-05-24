@@ -19,8 +19,8 @@ h1{
   margin: 50px;
   margin-bottom: 0px;
   color:#A98727;
-  text-shadow:#CEAB46 2px 0;
-  -webkit-text-stroke: 0.03px #533E03;
+  text-shadow:#CEAB46 9px 0;
+  -webkit-text-stroke: 1.5px #533E03;
 }
 canvas{
    background-color: #24361b;
@@ -96,7 +96,6 @@ button{
   border-radius: 15px;
   border-width: 3px;
   border-color: white;
-
   margin-top: 50px;
 }
 

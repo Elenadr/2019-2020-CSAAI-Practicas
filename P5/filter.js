@@ -1,3 +1,4 @@
+//-- Archivo .js Elena del Río P5
 console.log("Ejecutando JS....")
 
 //-- Obtener elementos del DOM
@@ -17,8 +18,7 @@ document.getElementById('controls').style.display = 'none';
 document.getElementById('rangos').style.display = 'none';
 document.getElementById('filterlab').style.display = 'none';
 
-
-
+//--Si pulsamos en imagen 1
 image1.onclick = () => {
   image1.onload = function(){
   };
@@ -33,6 +33,7 @@ image1.onclick = () => {
   document.getElementById('filterlab').style.display = 'block';
 }
 
+//--Si pulsamos en imagen 2
 image2.onclick = () => {
   image2.onload = function(){
   };
@@ -57,6 +58,7 @@ const range_valueR = document.getElementById('range_valueRed');
 const range_valueG = document.getElementById('range_valueGreen');
 const range_valueB = document.getElementById('range_valueBlue');
 
+//--Funcion para deslizadores
 function colour() {
   ctx.drawImage(img, 0,0);
   //--Mostrar nuevos valores del deslizador
@@ -87,7 +89,7 @@ function colour() {
   ctx.putImageData(imgData, 0,0);
 }
 
-//Acceso a cambiar umbrales
+//--Cambiar umbrales
 const deslizadores = document.getElementById('deslizadores');
 deslizadores.onclick = () => {
   document.getElementById('rangos').style.display = 'block';
@@ -104,7 +106,7 @@ deslizadores.onclick = () => {
     }
 }
 
-//Foto en escala de grises
+//--Escala de grises
 const grey = document.getElementById('grey');
 grey.onclick= ()=>{
   document.getElementById('rangos').style.display = 'none';
@@ -118,7 +120,7 @@ grey.onclick= ()=>{
   ctx.putImageData(imgData, 0,0);
 }
 
-// Espejo Horizontal
+//-- Efecto espejo
 const horizontal= document.getElementById('horizontal');
 horizontal.onclick = () => {
   document.getElementById('rangos').style.display = 'none';
@@ -128,7 +130,7 @@ horizontal.onclick = () => {
   ctx.drawImage(img, 0,0);
 }
 
-// Espejo vertical
+//-- Efecto espejo vertical
 const vertical= document.getElementById('vertical');
 vertical.onclick = () => {
   document.getElementById('rangos').style.display = 'none';
@@ -139,8 +141,6 @@ vertical.onclick = () => {
 
 }
 
-// Filtro negativo
-//-- Botón negativo
 const negativo= document.getElementById('negativo');
 negativo.onclick = () =>{
   document.getElementById('rangos').style.display = 'none';
