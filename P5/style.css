@@ -29,6 +29,7 @@ p{
 }
 
 canvas{
+  margin-top: 70px;
   border: #533E03 8px solid;
   width: 616px;
   background-image: url("ba1.jpg");
@@ -47,7 +48,11 @@ canvas{
 }
 
 .deslizadores{
-  display: inline-flex;
+  float: right;
+  margin-left: 0px;
+  padding-top: 100px;
+  padding-right: 150px;
+  padding-left: 0px;
 }
 
 button{
