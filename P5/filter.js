@@ -164,4 +164,23 @@ negativo.onclick = () =>{
   ctx.putImageData(imgData, 0,0);
 }
 
+const ruido= document.getElementById('ruido');
+ruido.onclick = () =>{
+  document.getElementById('rangos').style.display = 'none';
+  ctx.drawImage(img, 0,0);
+  //--Obtener la imagen del canvas en pixeles
+  let imgData = ctx.getImageData(0,0,canvas.width, canvas.height);
+  //--Obtener el array con todos los píxeles
+  let data = imgData.data;
+    for (let i = 0, n = data.length; i < n; i += 4) {
+       
+       let randRed = 0.6 + Math.random() * 0.4;
+       let randGreen = 0.6 + Math.random() * 0.4;
+       let randBlue = 0.6 + Math.random() * 0.4;
+        data[i] = data[i]*randRed;
+        data[i+1] = data[i+1]*randGreen;
+        data[i+2] = data[i+2]*randBlue;
+    }
+    ctx.putImageData(imgData, 0, 0);
+}
 console.log("Fin...");

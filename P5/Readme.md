@@ -18,6 +18,8 @@ A continuación, los filtros implementados y explicación breve:
 <br>
 <b>5. Filtro negativo</b> Imagen en colores negaivos.
 <br>
+<b>6. Filtro ruido</b> Imagen con ruido aleatorio.
+<br>
 <b>6. En cualquier momento de la prueba</b> y tan solo clickeando la otra imagen, podemos editarla.
 <br>
 <b>7. Si clickeamos en la imagen que estamos editando en el menu principal</b>será el mismo efecto que tener un filtro que nos devuelva la <b>imagen original</b>.
