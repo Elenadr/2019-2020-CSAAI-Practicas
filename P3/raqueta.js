@@ -1,4 +1,6 @@
 //-- Objeto raqueta
+//-- Archivo .js Elena del Río raqueta
+
 class Raqueta
 {
   constructor(ctx) {

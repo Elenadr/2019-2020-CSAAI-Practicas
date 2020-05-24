@@ -1,3 +1,5 @@
+//-- Archivo .js Elena del Río bola
+
 class Bola {
   constructor(ctx) {
     //-- Guardar el contexto de dibujo
@@ -45,8 +47,6 @@ class Bola {
     //-- x,y, anchura, altura
     this.ctx.arc(this.x, this.y, this.size,0,2*Math.PI);
     this.ctx.fill();
-
-
   }
 
   init() {
@@ -56,6 +56,7 @@ class Bola {
     this.vx = 0;
     this.vy = 0;
   }
+
   dcha(){
     //-- Inicializa la bola: A su posicion derecha
     this.x = this.x_dcha;
@@ -63,6 +64,7 @@ class Bola {
     this.vx = 0;
     this.vy = 0;
   }
+  
   update() {
     this.x += this.vx;
     this.y += this.vy;

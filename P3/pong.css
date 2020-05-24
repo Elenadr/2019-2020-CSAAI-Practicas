@@ -1,3 +1,4 @@
+
 @font-face
 {
    font-family: "HARRYP__";
@@ -9,6 +10,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 canvas{
    background-color: #24361b;
    background-size: cover;
@@ -20,14 +22,17 @@ canvas{
    border-radius: 30px;
    border: #533E03 8px solid;
 }
+
 .grywins{
   display: inline-flex;
   background-color: black;
 }
+
 .slywins{
   display: inline-flex;
   background-color: black;
 }
+
 h1{
   font-family: "HARRYP__";
   font-size: 70px;
@@ -39,6 +44,7 @@ h1{
   text-shadow:#CEAB46 2px 0;
   -webkit-text-stroke: 0.03px #533E03;
 }
+
 button{
   font-family: "HARRYP__";
   background-color: #533E03;
@@ -51,32 +57,37 @@ button{
   border-width: 3px;
   border-color: white
 }
+
 .bot{
   background-color:#24361b; /* Green */
   color: #CEAB46 ;
   border-color:  #533E03;
   border-width: 3px;
 }
+
 button:hover {
   background-color:#24361b; /* Green */
   color: #CEAB46 ;
   border-color:  #533E03;
   border-width: 3px;
 }
+
 .center{
   display:inline-block
 }
-.izq{
 
+.izq{
   font-family: "HARRYP__";
   float: left;
   margin-left: 200px;
 }
+
 .der{
   font-family: "HARRYP__";
   float: right;
   margin-right: 200px;
 }
+
 .container{
   text-align: center;
 }

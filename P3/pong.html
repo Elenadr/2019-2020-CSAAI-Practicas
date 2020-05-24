@@ -1,3 +1,5 @@
+<!-- Pong Elena del Río-->
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -9,40 +11,37 @@
     <title>QUIDDITCH CUP</title>
   </head>
   <body>
-    <audio id="myAudio" autoplay>
-        <source src="hp.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
+    <audio id="myAudio">
+    <source src="hp.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
     </audio>
-
     <h1>QUIDDITCH CUP</h1>
     <canvas id="canvas" width="600" height = "400"></canvas>
-    <div class="grywins">
 
+      <div class="grywins">
+        <img id="gry_wins" src="gry_wins.gif">
+        <h1 id="gry">GRYFFINDOR WINS</h1>
+      </div>
 
-    <img id="gry_wins" src="gry_wins.gif">
-    <h1 id="gry">GRYFFINDOR WINS</h1>
-        </div>
-        <div class="slywins">
+      <div class="slywins">
+        <img id="sly_wins" src="sly_wins.gif">
+        <h1 id="sly">SLYTHERING WINS</h1>
+      </div>
+      <br>
 
+      <div class="container">
 
-    <img id="sly_wins" src="sly_wins.gif">
-    <h1 id="sly">SLYTHERING WINS</h1>
-            </div>
-    <br>
-<div class="container">
+      <div class="izq">
+        <button class="bot">Gryffindor Controls, Q and A</button>
+      </div>
 
+      <div class="center">
+        <button id="stop">STOP</button>
+      </div>
 
-    <div class="izq">
-      <button class="bot">Gryffindor Controls, Q and A</button>
-    </div>
-
-  <div class="center">
-    <button id="stop">STOP</button>
-  </div>
-
-    <div class="der">
-      <button class="bot">Slytherin Controls, P and L</button>
-    </div>
-    </div>
+      <div class="der">
+        <button class="bot">Slytherin Controls, P and L</button>
+      </div>
+      </div>
   </body>
 </html>

@@ -1,3 +1,5 @@
+//-- Archivo .js Elena del Río Pong
+
 console.log("Ejecutando JS...");
 
 //-- Obtener el objeto canvas
@@ -12,6 +14,7 @@ const ctx = canvas.getContext("2d");
 const sonido_raqueta = new Audio("pong-raqueta.mp3");
 const sonido_rebote = new Audio("pong-rebote.mp3");
 const sonido_tanto = new Audio("pong-tanto.mp3");
+
 
 //-- Estados del juego
 const ESTADO = {
@@ -226,6 +229,7 @@ setInterval(()=>{
   animacion();
 },16);
 
+const myAudio = document.getElementById('myAudio');
 
   //-- Retrollamada de las teclas
   window.onkeydown = (e) => {
@@ -233,6 +237,7 @@ setInterval(()=>{
       estado = ESTADO.SAQUE;
       console.log("SAQUE!");
       canvas.focus();
+      myAudio.play();
   }
     //-- En el estado inicial no se
     //-- hace caso de las teclas
