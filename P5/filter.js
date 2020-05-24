@@ -186,8 +186,10 @@ ruido.onclick = () =>{
 }
 
 const dedicated= document.getElementById('dedicated');
+const abrazos = new Audio("abra.mp3");
 
 dedicated.onclick = () =>{
+    abrazos.play();
     document.getElementById('extra').style.display = 'block';
 }
 
