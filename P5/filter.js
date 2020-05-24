@@ -15,6 +15,7 @@ const range_value = document.getElementById('range_value');
 //-- Ocutar controles
 document.getElementById('controls').style.display = 'none';
 document.getElementById('rangos').style.display = 'none';
+document.getElementById('filterlab').style.display = 'none';
 
 
 
@@ -28,6 +29,8 @@ image1.onclick = () => {
   canvas.height =  img.height;
   ctx.drawImage(img, 0,0);
   document.getElementById('controls').style.display = 'block';
+  document.getElementById('text').style.display = 'none';
+  document.getElementById('filterlab').style.display = 'block';
 }
 
 image2.onclick = () => {
@@ -40,6 +43,8 @@ image2.onclick = () => {
   canvas.height =  img.height;
   ctx.drawImage(img, 0,0);
   document.getElementById('controls').style.display = 'block';
+  document.getElementById('text').style.display = 'none';
+  document.getElementById('filterlab').style.display = 'block';
 }
 
 //-- Acceso a los deslizadores
