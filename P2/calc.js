@@ -12,6 +12,7 @@ const gui ={
   dot:document.getElementById("dot")
 }
 
+
 let digitos = document.getElementsByClassName("cdigito");
 //--Estados calculadora
 const ESTADO = {
@@ -50,6 +51,7 @@ function number(num)
   if (estado != ESTADO.OPERATION) {
     display.innerHTML += op;
     estado = ESTADO.OPERATION;
+
   }
 }
 
@@ -57,6 +59,7 @@ function number(num)
 for (i=0; i<digitos.length; i++){
   digitos[i].onclick = (ev)=>{
     number(ev.target.value);
+
 
   }
 }
