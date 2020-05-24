@@ -17,7 +17,8 @@ const sonido_tanto = new Audio("pong-tanto.mp3");
 const ESTADO = {
   INIT: 0,
   SAQUE: 1,
-  JUGANDO: 2,
+  SAQUE_SL:2,
+  JUGANDO: 3,
 }
 
 //-- Variable de estado
@@ -71,7 +72,7 @@ if (estado == ESTADO.INIT) {
   console.log('init');
 }
 //-- Dibujar el texto de sacar
-if (estado == ESTADO.SAQUE) {
+if (estado == ESTADO.SAQUE ||estado == ESTADO.SAQUE_SL ) {
 
   //------ Dibujar el tanteo
   ctx.font = "40px HARRYP__";
@@ -110,7 +111,7 @@ function animacion()
     sonido_tanto.currentTime = 0;
     sonido_tanto.play();
     console.log('gooooool de gryyyyfindooor');
-    estado = ESTADO.SAQUE;
+    estado = ESTADO.SAQUE_SL;
      bola.dcha();
      console.log("Tanto!!!!");
      return;
@@ -163,7 +164,7 @@ function animacion()
 
   //-- Actualizar coordenada x de la bola, en funcion de
   //-- su velocidad
-  bola.update();
+  bola.update()
 
   //-- Borrar la pantalla
   ctx.clearRect(0,0, canvas.width, canvas.height);
@@ -207,15 +208,19 @@ setInterval(()=>{
 
     switch (e.key) {
       case "a":
+      case "A":
         raqI.v = raqI.v_ini;
         break;
       case "q":
+      case "Q":
         raqI.v = raqI.v_ini * -1;
         break;
       case "p":
+      case "P":
         raqD.v = raqD.v_ini * -1;
         break;
       case "l":
+      case "L":
         raqD.v = raqD.v_ini;
         break;
       case " ":
@@ -225,10 +230,8 @@ setInterval(()=>{
           //-- Reproducir sonido
           sonido_raqueta.currentTime = 0;
           sonido_raqueta.play();
-
-          //-- Llevar bola a su posicion incicial
-
           bola.init();
+          //-- Llevar bola a su posicion incicial
 
           //-- Darle velocidad
             bola.vx = bola.vx_ini;
@@ -239,18 +242,32 @@ setInterval(()=>{
 
           return false;
         }
+        if (estado == ESTADO.SAQUE_SL){
+          //-- Reproducir sonido
+          sonido_raqueta.currentTime = 0;
+          sonido_raqueta.play();
+          bola.dcha();
+          //-- Llevar bola a su posicion incicial
+
+          //-- Darle velocidad
+            bola.vx = bola.vx_ini;
+            bola.vy = bola.vy_ini;
+
+          //-- Cambiar al estado de jugando!
+          estado = ESTADO.JUGANDO;
+        }
       default:
     }
   }
 
 //-- Retrollamada de la liberacion de teclas
 window.onkeyup = (e) => {
-  if (e.key == "a" || e.key == "q"){
+  if (e.key == "a" || e.key == "q" || e.key == "A" || e.key == "Q" ){
     //-- Quitar velocidad de la raqueta
     raqI.v = 0;
   }
 
-  if (e.key == "p" || e.key == "l") {
+  if (e.key == "p" || e.key == "l" || e.key == "P" || e.key == "L" ) {
     raqD.v = 0;
   }
 }
