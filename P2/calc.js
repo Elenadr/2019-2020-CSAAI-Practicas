@@ -1,4 +1,4 @@
-//Calculadora funcional
+//Calculadora funcional Elena del Rio
 
 console.log("Launching Javascript... ");
 

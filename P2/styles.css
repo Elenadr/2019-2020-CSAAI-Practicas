@@ -1,13 +1,15 @@
-/* Uso font-face para poder usar las fuentes
-   descargadas de internet que quiero usar. */
+/* Estilo calculadora Elena del Río */
+
 @font-face
 {
    font-family: "HARRYP__";
    src: url("HARRYP__.TTF");
 }
+
 body{
   background-image: url("hhh.jpg");
-}
+  }
+
 h1 {
   font-family: "HARRYP__";
   font-size: 100px;
@@ -17,28 +19,20 @@ h1 {
   margin-bottom: 0px;
   color:#A98727;
   text-shadow:#CEAB46 2px 0;
-
-  -webkit-text-stroke: 0.03px #533E03;
-/*  text-shadow:#CEAB46 2px 0; */
-
-/*  -webkit-text-stroke: 0.03px #533E03; */
-
-  }
-  .calc{
-    /*background:  grey#380303;*/
-    border-radius: 10px;
-    text-align: center;
-    font-family: "HARRYP__";
-      font-size: 40px;
-      width: 32%;
-      padding: 0%;
-      margin-left: auto;
-      margin-right: auto;
-
-
-
+  -webkit-text-stroke: 1px #533E03;
   }
 
+.calc{
+  /*background:  grey#380303;*/
+  border-radius: 10px;
+  text-align: center;
+  font-family: "HARRYP__";
+  font-size: 40px;
+  width: 32%;
+  padding: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
 .pantalla{
   background: white;
@@ -58,18 +52,18 @@ h1 {
   margin-right: auto;
   width: 250px;
 }
+
 p{
   font-family: "HARRYP__";
   text-align: center;
   margin:0px;
   opacity: none;
   font-size: 40px;
-height: 50px;
-border:silver 5px ridge;
-border-radius: 5px;
-padding-top: 8px;
-
-}
+  height: 50px;
+  border:silver 5px ridge;
+  border-radius: 5px;
+  padding-top: 8px;
+  }
 
 .Calculator{
     background-color:rgba(1,1,1,0.7);
@@ -80,34 +74,35 @@ padding-top: 8px;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
-}
+  }
+
 .line1{
   padding: 10px;
-}
+  }
+
 .line2{
   padding: 15px;
-
   padding-left: 23px;
   padding-right: 20px;
-}
+  }
 
 .line3{
   padding: 15px;
+  }
 
-}
 .line4{
   padding: 15px;
   padding-left: 0.5px;
   padding-right: 0.5px;
-}
+  }
+
 button{
   font-family: "HARRYP__";
   font-size: 40px;
-    border-radius: 40px;
-
+  border-radius: 40px;
 }
+
 button:hover {
   background-color:black ;
   color: white;
-
 }
