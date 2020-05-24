@@ -7,49 +7,42 @@
     <script src="filter.js" defer></script>
   </head>
   <body>
-        <h1>Magic laboratory</h1>
-    <div class="images">
-
-
-
-
-    <img src="hermione.jpg" id="image1">
-    <img src="friend.png" id="image2">
+    <h1>Magic laboratory</h1>
+    <h2>Click on an image to follow</h2>
+      <div class="up">
+        <img src="hermione.jpg" id="image1">
+        <img src="friend.png" id="image2">
       </div>
-
-              <h1>Magic in progress...</h1>
-<div class="down">
-
-  <div class="transformada">
-
-
-  <canvas id="canvas"></canvas>
-
-  <br>
-
-          </div>
-
-      <div class="controls">
-<br>
-
-    <button id="grey">Grey</button>
-    <button id="horizontal">Horizontal Mirror</button>
-    <button id="vertical">Vertical Mirror</button>
-        <button id="negativo">Negativo</button>
-        <button id="deslizadores">Deslizadores</button>
-        <p>Establece el umbral de rojo:</p>
-        <input type="range" id="deslizadorRed" min="0" max="255" value="255"/>
-        <p id="range_valueRed">10</p>
-        <p>Establece el umbral de verde</p>
-        <input type="range" id="deslizadorGreen" min="0" max="255" value="255"/>
-        <p id="range_valueGreen">162</p>
-        <p>Establece el umbral de azul</p>
-        <input type="range" id="deslizadorBlue" min="0" max="255" value="255"/>
-        <p id="range_valueBlue">255</p>
+    <h1>Magic in progress...</h1>
+      <div class="down">
+        <div class="transformada">
+          <canvas id="canvas"></canvas>
+          <br>
         </div>
-  </div>
-
-<button id="extra">Extra</button>
-<img id="imagem">
+        <div id="controls">
+          <br>
+          <button id="grey">Grey</button>
+          <button id="horizontal">Horizontal Mirror</button>
+          <button id="deslizadores">Deslizadores</button>
+          <button id="vertical">Vertical Mirror</button>
+          <button id="negativo">Negativo</button>
+        </div>
+            <div class="deslizadores">
+              <div id="rangos">
+                <p>RED</p>
+                <input type="range" id="deslizadorRed" min="0" max="255" value="255"/>
+                <p id="range_valueRed">10</p>
+                <p>GREEN</p>
+                <input type="range" id="deslizadorGreen" min="0" max="255" value="255"/>
+                <p id="range_valueGreen">162</p>
+                <p>BLUE</p>
+                <input type="range" id="deslizadorBlue" min="0" max="255" value="255"/>
+                <p id="range_valueBlue">255</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <button id="extra">Extra</button>
+      <img id="imagem">
   </body>
 </html>

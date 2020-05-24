@@ -6,34 +6,40 @@ const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
 const ctx = canvas.getContext("2d");
 
-
-
-
 //-- Acceso al deslizador
 const deslizador = document.getElementById('deslizador');
 
 //-- Valor del deslizador
 const range_value = document.getElementById('range_value');
 
-//-- Función de retrollamada de imagen cargada
+//-- Ocutar controles
+document.getElementById('controls').style.display = 'none';
+document.getElementById('rangos').style.display = 'none';
+
 
 
 image1.onclick = () => {
   image1.onload = function(){
   };
   img = image1;
+  image1.style.border="red 5px solid";
+  image2.style.border="#533E03 8px solid";
   canvas.width = img.width;
   canvas.height =  img.height;
   ctx.drawImage(img, 0,0);
+  document.getElementById('controls').style.display = 'block';
 }
 
 image2.onclick = () => {
   image2.onload = function(){
   };
   img = image2;
+  image1.style.border="#533E03 8px solid";
+  image2.style.border="red 5px solid";
   canvas.width = img.width;
   canvas.height =  img.height;
   ctx.drawImage(img, 0,0);
+  document.getElementById('controls').style.display = 'block';
 }
 
 //-- Acceso a los deslizadores
@@ -79,6 +85,7 @@ function colour() {
 //Acceso a cambiar umbrales
 const deslizadores = document.getElementById('deslizadores');
 deslizadores.onclick = () => {
+  document.getElementById('rangos').style.display = 'block';
   console.log("Deslizadores");
   ctx.drawImage(img, 0,0);
     deslizadorRed.oninput = () => {
@@ -95,6 +102,7 @@ deslizadores.onclick = () => {
 //Foto en escala de grises
 const grey = document.getElementById('grey');
 grey.onclick= ()=>{
+  document.getElementById('rangos').style.display = 'none';
   var bright = 0;
   let imgData = ctx.getImageData(0,0,canvas.width, canvas.height);
   let data = imgData.data;
@@ -108,6 +116,7 @@ grey.onclick= ()=>{
 // Espejo Horizontal
 const horizontal= document.getElementById('horizontal');
 horizontal.onclick = () => {
+  document.getElementById('rangos').style.display = 'none';
   ctx.drawImage(img, 0,0);
   ctx.translate(2*(img.width)/2,0);
   ctx.scale(-1,1);
@@ -117,6 +126,7 @@ horizontal.onclick = () => {
 // Espejo vertical
 const vertical= document.getElementById('vertical');
 vertical.onclick = () => {
+  document.getElementById('rangos').style.display = 'none';
   ctx.drawImage(img, 0,0);
   ctx.translate(0,2*(img.height)/2);
   ctx.scale(1,-1);
@@ -128,6 +138,7 @@ vertical.onclick = () => {
 //-- Botón negativo
 const negativo= document.getElementById('negativo');
 negativo.onclick = () =>{
+  document.getElementById('rangos').style.display = 'none';
   ctx.drawImage(img, 0,0);
   //--Obtener la imagen del canvas en pixeles
   let imgData = ctx.getImageData(0,0,canvas.width, canvas.height);
@@ -150,16 +161,13 @@ negativo.onclick = () =>{
 // Extra
 const extra = document.getElementById('extra');
 const imagem =document.getElementById('imagem');
+  document.getElementById('extra').style.display = 'none';
+  document.getElementById('imagem').style.display = 'none';
 extra.onclick= ()=>{
+  document.getElementById('rangos').style.display = 'none';
+  document.getElementById('imagem').style.display = 'block';
   imagem.src="mari.png"
-  abajo.onclick = () => {
-    console.log("Imagen boca abajo");
-    ctx.drawImage(img, 0,0);
-    ctx.translate(0,2*(img.height)/2);
-    ctx.scale(1,-1);
-    ctx.drawImage(img, 0,0);
-    down = true;
-  }
+
 };
 
 console.log("Fin...");
