@@ -18,3 +18,6 @@ Links directos.
 <br>
 <br>
 <b> FILTRO </b> https://elenadr.github.io/2019-2020-CSAAI-Practicas/P5/filter.html
+
+<br>
+Explicaciones en readme de carpeta de cada práctica. Espero que te guste ;)
