@@ -7,8 +7,13 @@ Los videos se reproducen automaticamente en silencio. Si damos al botón de uno 
 <br>
 <b>CONTROLES EXTRA</b>
 <br>
-<b> Botón tests  </b>
+<b> 1. Botón tests  </b>
 Este botón pone imagen estática y se puede pulsar en cualquier momento.
-<b> Botón mute  </b> Pone el video en silencio
 <br>
-<b> Botón unmute  </b> Pone el video con sonido.
+<b> 2. Botón mute  </b> Pone el video en silencio. Solo aparece cuando se reproduce un video.
+<br>
+<b> 3. Botón unmute  </b> Pone el video con sonido. Solo aparece cuando se clickea muted.
+<br>
+<b> 4. Botón loop </b> Repite indefinidamente los dos primeros segundos del video, si pasamos a otro video sin darle a noloop solo se reproducen los dos primeros segundos. Solo aparece cuando se reproduce un video.
+<br>
+<b> 5. Botón noloop  </b> Se reproduce el video hasta el final y repite.Solo aparece cuando se clickea loop.

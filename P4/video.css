@@ -1,3 +1,4 @@
+/* Documento de estilo P4 Elena del Rio */
 @font-face
 {
    font-family: "HARRYP__";
@@ -8,7 +9,6 @@ body{
     background-image: url("how.png");
     background-size: cover;
     background-position: center;
-
 }
 
 h1{
@@ -22,6 +22,7 @@ h1{
   text-shadow:#CEAB46 9px 0;
   -webkit-text-stroke: 1.5px #533E03;
 }
+
 canvas{
    background-color: #24361b;
    background-size: cover;
@@ -35,8 +36,8 @@ canvas{
 }
 
 video{
-border: #533E03 4px solid;
-border-radius: 50px;
+  border: #533E03 4px solid;
+  border-radius: 50px;
 }
 
 .fuenteuno{
@@ -44,24 +45,23 @@ border-radius: 50px;
   padding: 10px;
   float:left;
   text-align: center;
-    padding-bottom: 0px;
-
-
+  padding-bottom: 0px;
 }
+
 .fuentedos{
   margin:auto;
   padding: 10px;
   float:left;
-    text-align: center;
-      padding-bottom: 0px;
-
+  text-align: center;
+  padding-bottom: 0px;
 }
+
 .fuentetres{
   margin:auto;
   padding: 10px;
   padding-bottom: 0px;
   float:left;
-    text-align: center;
+  text-align: center;
 }
 
 .pantallatv{
@@ -106,7 +106,6 @@ button{
   border-color: white;
   margin-top: 50px;
 }
-
 
 button:hover {
   background-color:silver;
