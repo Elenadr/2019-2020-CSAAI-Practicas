@@ -1,8 +1,9 @@
 # 2019-2020-CSAAI-Practicas
 Mis prácticas de la asignatura Construcción de Servicios y Aplicaciones Audiovisuales en Internet
-Curso 2019-2020  
-
+Curso 2019-2020
+<b> Temática Harry Potter en todas</b>  
 <br>
+Links directos.
 <br>
 <b> CV </b>  https://elenadr.github.io/2019-2020-CSAAI-Practicas/P1/index.html
 <br>
@@ -16,4 +17,4 @@ Curso 2019-2020
 <b> VIDEO </b> https://elenadr.github.io/2019-2020-CSAAI-Practicas/P4/video.html
 <br>
 <br>
-<b> FILTRO </b> https://elenadr.github.io/2019-2020-CSAAI/Practicas/P5/filter.html
+<b> FILTRO </b> https://elenadr.github.io/2019-2020-CSAAI-Practicas/P5/filter.html
