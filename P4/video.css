@@ -81,20 +81,17 @@ border-radius: 50px;
     margin-right: 150px;
     padding: 10px;
     float: right;
+    padding-top: 0px;
 }
 
 .up{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  column-count: 2;
+  display: flex;
+  align-items: center;
 }
 
 .down{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-    column-count: 3;
+  display: flex;
+  align-items: center;
 }
 
 button{
