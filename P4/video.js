@@ -2,24 +2,24 @@ console.log("Ejecutando JS...");
 
 //----- Obtener elemento de video y configurarlo
   const video1 = document.getElementById("video1")
-  video1.width=426;  //-- Tamaño de la pantalla de video
-  video1.height=240;
+  video1.width=326;  //-- Tamaño de la pantalla de video
+
 
   video1.src="https://github.com/Elenadr/Resources/raw/master/alwayss.mp4"
 
   const video2 = document.getElementById("video2")
-  video2.width=426;  //-- Tamaño de la pantalla de video
-  video2.height=240;
+  video2.width=326;  //-- Tamaño de la pantalla de video
+
   video2.src="https://github.com/Elenadr/Resources/raw/master/hermone.mp4"
 
   const video3 = document.getElementById("video3")
-  video3.width=420;  //-- Tamaño de la pantalla de video
-  video3.height=236;
+  video3.width=320;  //-- Tamaño de la pantalla de video
+
   video3.src="https://github.com/Elenadr/Resources/raw/master/voldemort.mp4"
 
 const video4 = document.getElementById("video4");
 video4.width=640;  //-- Tamaño de la pantalla de video
-video4.height=380;
+
 video4.poster="https://github.com/Elenadr/Resources/raw/master/intro.gif";
 
 

@@ -41,7 +41,7 @@ border-radius: 50px;
 
 .fuenteuno{
   margin:auto;
-  padding: 20px;
+  padding: 10px;
   float:left;
   text-align: center;
     padding-bottom: 0px;
@@ -57,33 +57,44 @@ border-radius: 50px;
 
 }
 .fuentetres{
-  margin:20px;
+  margin:auto;
   padding: 10px;
   padding-bottom: 0px;
   float:left;
     text-align: center;
 }
 
-.videocuatro{
-  margin-left: 340px;
-  margin-right: auto;
+.pantallatv{
+  margin-left: 300px;
+  margin-right: 50px;
   text-align: center;
   float: left;
+  margin-bottom: 100px;
 }
-  #video4{
+
+#video4{
     border: none;
-
-
 }
+
 .menu{
+    margin-left: 50px;
     margin-right: 150px;
     padding: 10px;
     float: right;
 }
-.princu{
+
+.up{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  column-count: 2;
+}
+
+.down{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+    column-count: 3;
 }
 
 button{
